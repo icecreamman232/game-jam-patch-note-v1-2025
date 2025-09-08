@@ -68,10 +68,5 @@ namespace SGGames.Scripts.Managers
             mousePos.z = 0;
             return mousePos;
         }
-        
-        private void AttackActionOnPerformed(InputAction.CallbackContext context)
-        {
-            OnAttackInputCallback?.Invoke();
-        }
     }
 }

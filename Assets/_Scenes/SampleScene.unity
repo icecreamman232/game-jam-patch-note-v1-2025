@@ -666,13 +666,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fb556796c3c0847812865aa7f8827e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 5
-  m_steeringSpeed: 2
-  m_rotationSpeed: 90
-  m_minSpeedForRotation: 0.1
-  m_movingDirection: {x: 0, y: 0}
-  m_movingInput: {x: 0, y: 0}
-  m_model: {fileID: 207128249}
+  forwardSpeed: 4
+  reverseSpeed: 2
+  rotationSpeed: 30
+  acceleration: 0.5
+  deceleration: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

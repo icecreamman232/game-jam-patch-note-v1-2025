@@ -7,58 +7,124 @@ namespace SGGames.Scripts.Ship
 {
     public class ShipMovement : MonoBehaviour
     {
-        [SerializeField] private float m_moveSpeed;
-        [SerializeField] private float m_steeringSpeed = 2f; // How fast the direction changes
-        [SerializeField] private float m_rotationSpeed = 90f; // Degrees per second
-        [SerializeField] private float m_minSpeedForRotation = 0.1f; // Minimum speed to rotate
-        [SerializeField] private Vector2 m_movingDirection;
-        [SerializeField] private Vector2 m_movingInput;
-        [SerializeField] private Transform m_model;
+        [Header("Movement Settings")]
+        [SerializeField] private float forwardSpeed = 10f;
+        [SerializeField] private float reverseSpeed = 5f;
+        [SerializeField] private float rotationSpeed = 90f;
+        [SerializeField] private float acceleration = 2f;
+        [SerializeField] private float deceleration = 3f;
+        
+        private Vector2 movementInput;
+        private float currentForwardSpeed;
+        private float currentRotationVelocity;
+        private InputManager inputManager;
 
         private void Start()
         {
-            var inputManager = ServiceLocator.GetService<InputManager>();
-            inputManager.OnMoveInputCallback += OnMoveInputCallback;
+            // Subscribe to input events
+            inputManager = ServiceLocator.GetService<InputManager>();
+            if (inputManager != null)
+            {
+                inputManager.OnMoveInputCallback += OnMoveInput;
+            }
         }
 
         private void OnDestroy()
         {
-            var inputManager = ServiceLocator.GetService<InputManager>();
-            inputManager.OnMoveInputCallback -= OnMoveInputCallback;
-        }
-
-        private void OnMoveInputCallback(Vector2 input)
-        {
-            m_movingInput = input;
-        }
-        
-        private void UpdateSteeringBehavior()
-        {
-            // If there's no input, gradually slow down
-            if (m_movingInput.magnitude < 0.1f)
+            // Unsubscribe from input events
+            if (inputManager != null)
             {
-                m_movingDirection = Vector2.Lerp(m_movingDirection, Vector3.zero, m_steeringSpeed * Time.deltaTime);
-                return;
+                inputManager.OnMoveInputCallback -= OnMoveInput;
             }
-
-            // Convert 2D input to 3D target direction (assuming XZ movement)
-            Vector3 targetDirection = m_movingInput.normalized;
-
-            // Smoothly rotate current direction towards target direction
-            m_movingDirection = Vector2.Lerp(m_movingDirection, targetDirection, m_steeringSpeed * Time.deltaTime);
         }
-        
+
+        private void OnMoveInput(Vector2 input)
+        {
+            movementInput = input;
+        }
 
         private void Update()
         {
-            UpdateSteeringBehavior();
-            UpdateMovement();
+            HandleMovement();
+            HandleRotation();
         }
 
-        private void UpdateMovement()
+        private void HandleMovement()
         {
-            m_model.up = m_movingDirection;
-            transform.Translate(m_movingDirection * (m_moveSpeed * Time.deltaTime));
+            float verticalInput = movementInput.y;
+            float targetSpeed = 0f;
+
+            if (verticalInput > 0)
+            {
+                // Forward movement
+                targetSpeed = forwardSpeed * verticalInput;
+            }
+            else if (verticalInput < 0)
+            {
+                // Reverse movement (negative input means moving backwards)
+                targetSpeed = reverseSpeed * verticalInput;
+            }
+
+            // Smoothly accelerate/decelerate to target speed
+            if (Mathf.Abs(targetSpeed) > Mathf.Abs(currentForwardSpeed))
+            {
+                currentForwardSpeed = Mathf.MoveTowards(currentForwardSpeed, targetSpeed, acceleration * Time.deltaTime);
+            }
+            else
+            {
+                currentForwardSpeed = Mathf.MoveTowards(currentForwardSpeed, targetSpeed, deceleration * Time.deltaTime);
+            }
+
+            // Apply movement in the forward direction of the ship
+            Vector2 forwardDirection = transform.up; // Assuming ship faces up in sprite
+            Vector2 movement = forwardDirection * (currentForwardSpeed * Time.deltaTime);
+            
+            // Move the transform directly
+            transform.position += (Vector3)movement;
+        }
+
+        private void HandleRotation()
+        {
+            float horizontalInput = movementInput.x;
+            float targetRotationVelocity = 0f;
+            
+            if (Mathf.Abs(horizontalInput) > 0.1f && Mathf.Abs(movementInput.y) > 0.1f)
+            {
+                // Only rotate when there's horizontal input AND the ship is moving
+                targetRotationVelocity = -horizontalInput * rotationSpeed;
+                
+                // Adjust rotation speed based on movement direction
+                // When moving in reverse, steering feels more natural if slightly reduced
+                if (currentForwardSpeed < 0)
+                {
+                    targetRotationVelocity *= 0.7f; // Reduce steering sensitivity when reversing
+                }
+            }
+
+            // Smoothly change rotation velocity
+            currentRotationVelocity = Mathf.MoveTowards(currentRotationVelocity, targetRotationVelocity, deceleration * 60f * Time.deltaTime);
+
+            // Apply rotation
+            if (Mathf.Abs(currentRotationVelocity) > 0.1f)
+            {
+                transform.Rotate(0, 0, currentRotationVelocity * Time.deltaTime);
+            }
+        }
+
+        // Optional: Visual debug information
+        private void OnDrawGizmosSelected()
+        {
+            // Draw forward direction
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(transform.position, transform.up * 2f);
+            
+            // Draw current velocity direction
+            if (currentForwardSpeed != 0)
+            {
+                Vector2 velocityDirection = transform.up * Mathf.Sign(currentForwardSpeed);
+                Gizmos.color = currentForwardSpeed > 0 ? Color.green : Color.red;
+                Gizmos.DrawRay(transform.position, velocityDirection * 1.5f);
+            }
         }
     }
 }

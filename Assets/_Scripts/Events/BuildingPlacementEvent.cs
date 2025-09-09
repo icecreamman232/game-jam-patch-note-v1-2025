@@ -7,6 +7,7 @@ namespace SGGames.Scripts.Events
 
     public class BuildingPlacementEventData
     {
-        public Transform BuildingSlot;
+        public GameObject BuildingPrefab;
+        public Vector2 BuildingPosition;
     }
 }

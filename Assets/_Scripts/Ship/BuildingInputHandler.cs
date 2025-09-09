@@ -11,16 +11,17 @@ namespace SGGames.Scripts.Ship
         [SerializeField] private Transform[] m_slotPivot;
         
         private Vector3 m_startDragPosition;
-        public Action<int[]> OnBuildingPlaced; 
+        public Action OnBuildingPlaced; 
         
         public void Initialize(GridController gridController)
         {
             m_gridController = gridController;
+            m_startDragPosition = transform.position;
         }
         
         private void OnMouseDown()
         {
-            m_startDragPosition = transform.position;
+            
         }
         
         private void OnMouseDrag()
@@ -37,8 +38,11 @@ namespace SGGames.Scripts.Ship
                 if (m_gridController.IsValidWorldPosition(pivot.position))
                 {
                     var index = m_gridController.WorldPositionToGridIndex(pivot.position);
-                    occupiedIndexArray[count] = index;
-                    count++;
+                    if (!m_gridController.IsGridCellOccupied(index))
+                    {
+                        occupiedIndexArray[count] = index;
+                        count++;
+                    }
                 }
             }
 
@@ -48,8 +52,13 @@ namespace SGGames.Scripts.Ship
                 var bottomLeftByGrid = m_gridController.GetSnapPositionToGrid(m_slotPivot[0].position);
                 var snapPos = (Vector2)bottomLeftByGrid + m_offsetBottomLeft;
                 transform.position = snapPos;
-                
-                OnBuildingPlaced?.Invoke(occupiedIndexArray);
+
+
+                foreach (var index in occupiedIndexArray)
+                {
+                    m_gridController.SetGridCellOccupied(index, true);
+                }
+                OnBuildingPlaced?.Invoke();
             }
             else
             {

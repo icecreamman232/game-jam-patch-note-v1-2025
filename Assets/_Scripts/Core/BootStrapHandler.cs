@@ -10,10 +10,6 @@ namespace SGGames.Scripts.Core
         private void Awake()
         {
             ServiceLocator.RegisterService<BootStrapHandler>(this);
-        }
-
-        private void Start()
-        {
             foreach (var component in m_bootStrap)
             {
                 if (component is IBootStrap bootStrap)

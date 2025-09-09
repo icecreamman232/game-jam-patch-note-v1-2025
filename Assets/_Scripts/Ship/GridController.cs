@@ -7,14 +7,18 @@ namespace SGGames.Scripts.Ship
     {
         [SerializeField] private Grid m_grid; 
         [SerializeField] private Vector2Int m_gridSize;
+        [SerializeField] private bool[] m_gridOccupied;
 
         private int m_halfGridSizeX;
         private int m_halfGridSizeY;
         private Vector3 m_bottomLeft;
         private Vector3 m_topRight;
-
-        private void Awake()
+        
+        public void Initialize(Vector2Int gridSize)
         {
+            m_gridSize = gridSize;
+            m_gridOccupied = new bool[m_gridSize.x * m_gridSize.y];
+            
             m_halfGridSizeX = m_gridSize.x / 2;
             m_halfGridSizeY = m_gridSize.y / 2;
 
@@ -29,6 +33,16 @@ namespace SGGames.Scripts.Ship
         {
             return worldPosition.x >= m_bottomLeft.x && worldPosition.x < m_topRight.x &&
                    worldPosition.y >= m_bottomLeft.y && worldPosition.y < m_topRight.y;
+        }
+        
+        public bool IsGridCellOccupied(int index)
+        {
+            return m_gridOccupied[index];
+        }
+        
+        public void SetGridCellOccupied(int index, bool isOccupied)
+        {
+            m_gridOccupied[index] = isOccupied;
         }
         
         /// <summary>

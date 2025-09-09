@@ -6,11 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/BootStrapHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/BootStrapHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingInputHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipGrid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipBuildingHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipGrid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipBuildingHandler.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Manager/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/BuildSlot.cs" root0="FORCE_HIGHLIGHTING" />
@@ -134,7 +141,7 @@
       <workItem from="1757379157109" duration="5281000" />
       <workItem from="1757385139551" duration="11820000" />
       <workItem from="1757429170405" duration="357000" />
-      <workItem from="1757430040149" duration="4108000" />
+      <workItem from="1757430040149" duration="9085000" />
     </task>
     <servers />
   </component>

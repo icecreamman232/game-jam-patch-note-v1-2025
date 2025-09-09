@@ -6,11 +6,18 @@ namespace SGGames.Scripts.Ship
 {
     public class BuildingInputHandler : MonoBehaviour
     {
-        public GridController GridController;
-        public Vector2 OffsetBottomLeft;
-        public Transform[] SlotPivot;
-        [SerializeField] private Building m_building;
+        [SerializeField] private GridController m_gridController;
+        [SerializeField] private Vector2 m_offsetBottomLeft;
+        [SerializeField] private Transform[] m_slotPivot;
+        
         private Vector3 m_startDragPosition;
+        public Action<int[]> OnBuildingPlaced; 
+        
+        public void Initialize(GridController gridController)
+        {
+            m_gridController = gridController;
+        }
+        
         private void OnMouseDown()
         {
             m_startDragPosition = transform.position;
@@ -24,35 +31,30 @@ namespace SGGames.Scripts.Ship
         private void OnMouseUp()
         {
             var count = 0;
-            foreach (var pivot in SlotPivot)
+            int[] occupiedIndexArray = new int[m_slotPivot.Length]; 
+            foreach (var pivot in m_slotPivot)
             {
-                if (GridController.IsValidWorldPosition(pivot.position))
+                if (m_gridController.IsValidWorldPosition(pivot.position))
                 {
+                    var index = m_gridController.WorldPositionToGridIndex(pivot.position);
+                    occupiedIndexArray[count] = index;
                     count++;
                 }
             }
 
-            if (count == SlotPivot.Length)
+            if (count == m_slotPivot.Length)
             {
-                var bottomLeftByGrid = GridController.GetSnapPositionToGrid(SlotPivot[0].position);
-                //Bottom Left Pivot
-                var snapPos = (Vector2)bottomLeftByGrid + OffsetBottomLeft;
+                //Snap building to grid
+                var bottomLeftByGrid = m_gridController.GetSnapPositionToGrid(m_slotPivot[0].position);
+                var snapPos = (Vector2)bottomLeftByGrid + m_offsetBottomLeft;
                 transform.position = snapPos;
-                Debug.Log("Building Placed");
+                
+                OnBuildingPlaced?.Invoke(occupiedIndexArray);
             }
-            
-            
-            // if (IsCollideWithSlot())
-            // {
-            //     var newPos = transform.position;
-            //     newPos.x = Mathf.RoundToInt(newPos.x / 0.125f) * 0.125f;
-            //     newPos.y = Mathf.RoundToInt(newPos.x / 0.125f) * 0.125f;
-            //     m_startDragPosition = newPos;
-            // }
-            // else
-            // {
-            //     transform.position = m_startDragPosition;
-            // }
+            else
+            {
+                transform.position = m_startDragPosition;
+            }
         }
     }
 }

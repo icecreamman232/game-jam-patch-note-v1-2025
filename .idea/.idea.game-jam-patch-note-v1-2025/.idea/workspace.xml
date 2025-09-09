@@ -5,553 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/css.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/css/main.css.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/favicon.ico.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/assets/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTBezierPath.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTBezierPath.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTDescr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTDescr.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTEvent.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTRect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTRect.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSeq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSeq.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSpline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LTSpline.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudio.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudioOptions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanAudioOptions.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanSmooth.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanSmooth.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTween.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTween.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTweenType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/LeanTweenType.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/classes/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/elements.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/elements/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/elements/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Documentation/index.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Editor/LeanTweenDocumentationEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Editor/LeanTweenDocumentationEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/AlphBumps.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/AlphBumps.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/AlphaReadyMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/AlphaReadyMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/DirectionalArrowMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/DirectionalArrowMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/FrictionLess.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/FrictionLess.physicMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_PersonSprites.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_PersonSprites.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_PlanetMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_PlanetMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_Ring.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_Ring.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_SineWave.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futoro_SineWave.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_Bar.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_Bar.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_ButtonBack.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_ButtonBack.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_ButtonBackDark.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_ButtonBackDark.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_SineWave.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_SineWave.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_WindowBack.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Futuro_WindowBack.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Graph.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Graph.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/GridLines.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/GridLines.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Ground.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Ground.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/LineGlowMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/LineGlowMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Mock2d.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/Mock2d.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/ParticleGlow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/ParticleGlow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/PointMark.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/PointMark.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/SpaceLineGlowMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/SpaceLineGlowMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackCar.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackCar.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackFollowMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackFollowMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackGlowMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackGlowMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackLines.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrackLines.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrailFollowMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/TrailFollowMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/WalkingStick.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Material/WalkingStick.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/2dText.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/2dText.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/AdvancedExamplesText.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/AdvancedExamplesText.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/BasicExamplesText.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/BasicExamplesText.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/CameraShakeText.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/CameraShakeText.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/CurvePathsText.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/CurvePathsText.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/DirectionalArrow.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/DirectionalArrow.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/EndlessDrivingText.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/EndlessDrivingText.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/ExampleCar.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/ExampleCar.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/ExampleFirTree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/ExampleFirTree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Grid.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Grid.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTween-Icon.blend.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTween-Icon.blend.zip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTween-Icon.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTween-Icon.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTween.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTween.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTweenHD-Icon.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/LeanTweenHD-Icon.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/LMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/LMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/LineMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/LineMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/Material.001.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/Material.001.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/Material_001.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/Material_001.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/No Name.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/No Name.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarAlphaBlue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarAlphaBlue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarBlue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarBlue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarHat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarHat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarMat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarMat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarSpace.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SimpleAvatarSpace.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SubTitleText.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/SubTitleText.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/eanTween.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/Materials/eanTween.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/SimpleAvatar.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/SimpleAvatar.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/SimpleAvatarPieces.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Models/SimpleAvatarPieces.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/Avatar2dParticles.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/Avatar2dParticles.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarAlpha.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarAlpha.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarDiffuse 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarDiffuse 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarDiffuse.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarDiffuse.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarEventsCS.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarEventsCS.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarSpace.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarSpace.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarSparkles.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/AvatarSparkles.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/BasicExamplesText.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/BasicExamplesText.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/DustCloud.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/DustCloud.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/EndlessPiece.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/EndlessPiece.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/GridLine.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/GridLine.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/Grids.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Prefabs/Grids.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/Following.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/Following.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/FollowingSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/FollowingSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralAdvancedTechniques.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralAdvancedTechniques.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralAdvancedTechniquesSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralAdvancedTechniquesSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasic.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasic.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasicSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasicSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasics2d.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasics2d.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasics2dSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralBasics2dSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralCameraShake.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralCameraShake.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralCameraShakeSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralCameraShakeSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEasingTypes.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEasingTypes.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEasingTypesSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEasingTypesSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEvents.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEvents.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEventsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralEventsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSequencer.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSequencer.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSequencerSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSequencerSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSimpleUi.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSimpleUi.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSimpleUiSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralSimpleUiSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralUISpace.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralUISpace.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralUISpaceSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/GeneralUISpaceSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/LogoCinematic.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/LogoCinematic.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/LogoCinematicSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/LogoCinematicSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezier.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezier.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezier2d.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezier2d.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezier2dSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezier2dSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezierSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathBezierSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSpline2d.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSpline2d.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSpline2dSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSpline2dSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineEndless.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineEndless.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineEndlessSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineEndlessSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplinePerformance.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplinePerformance.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplinePerformanceSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplinePerformanceSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineTrack.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineTrack.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineTrackSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplineTrackSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplines.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplines.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplinesSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/PathSplinesSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingUnitTests.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingUnitTests.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingUnitTestsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingUnitTestsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingZLegacy.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingZLegacy.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingZLegacySettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scenes/TestingZLegacySettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Archive.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Archive.zip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Following.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Following.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/LogoCinematic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/LogoCinematic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplines.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplines.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/DefaultParticleReplacement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/DefaultParticleReplacement.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/Dude2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/Dude2d.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/DustCloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/DustCloud.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/HorizontalGradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/HorizontalGradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/PowerUpStar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Textures/PowerUpStar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescr.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescr.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescrOptional.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescrOptional.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanSmooth.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanSmooth.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.dll.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.dll.zip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTweenExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTweenExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/License.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/License.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/ReadMe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/ReadMe.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/FollowingTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/FollowingTests.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/FollowingTests.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/FollowingTests.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/FollowingTestsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/FollowingTestsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/PerformanceTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/PerformanceTests.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/PerformanceTests.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/PerformanceTests.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/PerformanceTestsSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/PerformanceTestsSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Prefabs/BulletPrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Prefabs/BulletPrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Scripts/LeanPool.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Scripts/LeanPool.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing240.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing240.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing240.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing240.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing240Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing240Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing243.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing243.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing243.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing243.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing243Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing243Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing246.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing246.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing246.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing246.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing246Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing246Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing248.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing248.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing248.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing248.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing248Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/Testing248Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingColorTweening.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingColorTweening.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingDescr.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingDescr.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingDescr.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingDescr.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingDescrSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingDescrSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssue.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssue.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssue2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssue2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssueSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingIssueSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingMaxTweens.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingMaxTweens.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingMaxTweens.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingMaxTweens.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingMaxTweensSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingMaxTweensSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingOptionalCancel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingOptionalCancel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingOptionalCancel.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingOptionalCancel.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingOptionalCancelSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingOptionalCancelSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingRotate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingRotate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingRotate.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingRotate.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingRotateSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingRotateSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSceneSwitching.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSceneSwitching.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSceneSwitching.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSceneSwitching.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSceneSwitchingSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSceneSwitchingSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSequencer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSequencer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSequencer.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSequencer.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSequencerSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Testing/TestingSequencerSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/BillingMode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Art.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Art/rect-64x64-white-placeholder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/rect-64x64-white-placeholder.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Art/rect-64x96-white-placeholder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/rect-64x96-white-placeholder.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingInputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -571,23 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="F:\UnityEditor\6000.0.54f1\Editor\Unity.exe" />
@@ -627,13 +95,15 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14736">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14736" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -664,6 +134,7 @@
       <workItem from="1757379157109" duration="5281000" />
       <workItem from="1757385139551" duration="11820000" />
       <workItem from="1757429170405" duration="357000" />
+      <workItem from="1757430040149" duration="4108000" />
     </task>
     <servers />
   </component>

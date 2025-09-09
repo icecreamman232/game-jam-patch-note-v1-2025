@@ -13,6 +13,11 @@ namespace SGGames.Scripts.Ship
         [SerializeField] private float rotationSpeed = 90f;
         [SerializeField] private float acceleration = 2f;
         [SerializeField] private float deceleration = 3f;
+        [Header("Collision Settings")]
+        [SerializeField] private LayerMask wallLayerMask = -1;
+        [SerializeField] private float collisionCheckDistance = 0.5f;
+        [SerializeField] private float shipRadius = 0.5f;
+
         
         private Vector2 movementInput;
         private float currentForwardSpeed;
@@ -79,6 +84,15 @@ namespace SGGames.Scripts.Ship
             Vector2 forwardDirection = transform.up; // Assuming ship faces up in sprite
             Vector2 movement = forwardDirection * (currentForwardSpeed * Time.deltaTime);
             
+            // Check for wall collision before moving
+            if (CheckWallCollision(movement))
+            {
+                // Stop movement if collision detected
+                currentForwardSpeed = 0f;
+                return;
+            }
+
+            
             // Move the transform directly
             transform.position += (Vector3)movement;
         }
@@ -110,6 +124,36 @@ namespace SGGames.Scripts.Ship
                 transform.Rotate(0, 0, currentRotationVelocity * Time.deltaTime);
             }
         }
+        
+        /// <summary>
+        /// Checks if the ship will collide with a wall in the given movement direction
+        /// </summary>
+        /// <param name="movement">The intended movement vector</param>
+        /// <returns>True if collision detected, false otherwise</returns>
+        private bool CheckWallCollision(Vector2 movement)
+        {
+            Vector2 currentPosition = transform.position;
+            Vector2 targetPosition = currentPosition + movement;
+        
+            // Use CircleCast to check for collision along the movement path
+            RaycastHit2D hit = Physics2D.CircleCast(
+                currentPosition,
+                shipRadius,
+                movement.normalized,
+                collisionCheckDistance + movement.magnitude,
+                wallLayerMask
+            );
+        
+            // If we hit something, check if it's close enough to stop movement
+            if (hit.collider != null)
+            {
+                float distanceToWall = hit.distance - shipRadius;
+                return distanceToWall <= movement.magnitude;
+            }
+        
+            return false;
+        }
+
 
         // Optional: Visual debug information
         private void OnDrawGizmosSelected()
@@ -125,6 +169,9 @@ namespace SGGames.Scripts.Ship
                 Gizmos.color = currentForwardSpeed > 0 ? Color.green : Color.red;
                 Gizmos.DrawRay(transform.position, velocityDirection * 1.5f);
             }
+            
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, shipRadius);
         }
     }
 }

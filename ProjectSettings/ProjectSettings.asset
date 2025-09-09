@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: c24bd15ad5d3add4886db8f9071066c4
+  productGUID: 63e270261668fc44f988cca5a52e8e62
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: gamejam-patch-note-v1
+  productName: warship
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -596,14 +596,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: gamejam-patch-note-v1
+  metroPackageName: warship
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: gamejam-patch-note-v1
+  metroApplicationDescription: warship
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -674,10 +674,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 565a6773-5c01-4caf-8122-3d42a0909cf6
+  cloudProjectId: efcfcedd-8843-440b-9b57-d7cd0b2f9e4d
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: gamejam-patch-note-v1
+  projectName: warship
   organizationId: stephen_ho
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

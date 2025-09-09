@@ -33,6 +33,7 @@ namespace SGGames.Scripts.Managers
         
         public static Vector3 GetWorldMousePosition()
         {
+            if(m_camera == null) return Vector3.zero;
             var mousePos = Input.mousePosition;
             mousePos = m_camera.ScreenToWorldPoint(mousePos);
             mousePos.z = 0;

@@ -16,6 +16,7 @@ namespace SGGames.Scripts.Managers
         [Header("Buildings")]
         [SerializeField] private ShipBuildingHandler m_shipBuildingHandler;
         [SerializeField] private GameObject m_buildingGroup;
+        [SerializeField] private GameObject m_shipLayout;
         [SerializeField] private Ship.Building[] m_buildings;
         
         
@@ -57,6 +58,7 @@ namespace SGGames.Scripts.Managers
             InputManager.SetActive(false);
             transform.position = m_shipBuildingHandler.transform.position;
             uiEvent.Raise(UIEventState.OpenBuildMode);
+            m_shipLayout.SetActive(true);
             m_buildingGroup.SetActive(true);
             PlayZoomInTween(() =>
             {
@@ -70,6 +72,7 @@ namespace SGGames.Scripts.Managers
             {
                 InputManager.SetActive(true);
                 m_buildingGroup.SetActive(false);
+                m_shipLayout.SetActive(false);
                 foreach (var building in m_buildings)
                 {
                     building.ResetPosition();

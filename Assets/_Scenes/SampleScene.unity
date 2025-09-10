@@ -1200,6 +1200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_pixelPerfectCamera: {fileID: 519420033}
   m_cameraRefZoomSize: {x: 384, y: 216}
+  m_shipMovement: {fileID: 1997348476}
   m_shipBuildingHandler: {fileID: 1997348479}
   m_buildingGroup: {fileID: 1233153696}
   m_buildings:

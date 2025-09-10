@@ -18,7 +18,7 @@ namespace SGGames.Scripts.Ship
         [SerializeField] private float collisionCheckDistance = 0.5f;
         [SerializeField] private float shipRadius = 0.5f;
 
-        
+        private bool m_canMove;
         private Vector2 movementInput;
         private float currentForwardSpeed;
         private float currentRotationVelocity;
@@ -32,6 +32,8 @@ namespace SGGames.Scripts.Ship
             {
                 inputManager.OnMoveInputCallback += OnMoveInput;
             }
+
+            m_canMove = true;
         }
 
         private void OnDestroy()
@@ -50,8 +52,14 @@ namespace SGGames.Scripts.Ship
 
         private void Update()
         {
+            if (!m_canMove) return;
             HandleMovement();
             HandleRotation();
+        }
+
+        public void SetMovementPermission(bool canMove)
+        {
+            m_canMove = canMove;
         }
 
         private void HandleMovement()

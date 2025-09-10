@@ -20,7 +20,7 @@ namespace SGGames.Scripts.Ship
         private void Awake()
         {
             m_inputHandler.OnBuildingPlaced = OnBuildingPlaced;
-            m_initialPosition = transform.position;
+            m_initialPosition = transform.localPosition;
         }
 
         private void OnBuildingPlaced()
@@ -34,7 +34,7 @@ namespace SGGames.Scripts.Ship
 
         public void ResetPosition()
         {
-            transform.position = m_initialPosition;
+            transform.localPosition = m_initialPosition;
         }
     }
 }

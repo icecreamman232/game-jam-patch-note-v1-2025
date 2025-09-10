@@ -938,7 +938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1997348475}
+  m_Father: {fileID: 1381059521}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035653665
 GameObject:
@@ -1201,7 +1201,6 @@ MonoBehaviour:
   uiEvent: {fileID: 11400000, guid: a6a39ba22d1f1e54abb960dabe4bda4e, type: 2}
   m_pixelPerfectCamera: {fileID: 519420033}
   m_cameraRefZoomSize: {x: 384, y: 216}
-  m_shipMovement: {fileID: 1997348476}
   m_shipBuildingHandler: {fileID: 1997348479}
   m_buildingGroup: {fileID: 1233153696}
   m_buildings:
@@ -1237,6 +1236,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1233153697}
+  - {fileID: 962943513}
   m_Father: {fileID: 1243530606}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1701282999
@@ -1486,7 +1486,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 207128249}
-  - {fileID: 962943513}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1997348476

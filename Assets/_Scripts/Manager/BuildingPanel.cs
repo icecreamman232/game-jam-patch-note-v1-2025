@@ -8,7 +8,7 @@ namespace SGGames.Scripts.Managers
     {
         [SerializeField] private ShipBuildingHandler m_shipBuildingHandler;
         [SerializeField] private GameObject m_buildingGroup;
-        [SerializeField] private Building[] m_buildings;
+        [SerializeField] private Ship.Building[] m_buildings;
         private bool m_isOpened;
         
         private void Start()

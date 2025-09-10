@@ -14,6 +14,7 @@ namespace SGGames.Scripts.Managers
         [SerializeField] private PixelPerfectCamera m_pixelPerfectCamera;
         [SerializeField] private Vector2Int m_cameraRefZoomSize;
         [Header("Buildings")]
+        [SerializeField] private GridController m_gridController;
         [SerializeField] private ShipBuildingHandler m_shipBuildingHandler;
         [SerializeField] private GameObject m_buildingGroup;
         [SerializeField] private GameObject m_shipLayout;
@@ -60,6 +61,7 @@ namespace SGGames.Scripts.Managers
             uiEvent.Raise(UIEventState.OpenBuildMode);
             m_shipLayout.SetActive(true);
             m_buildingGroup.SetActive(true);
+            m_gridController.CalculateGridBounds();
             PlayZoomInTween(() =>
             {
                 InputManager.SetActive(true);

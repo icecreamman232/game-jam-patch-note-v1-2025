@@ -8,6 +8,7 @@ namespace SGGames.Scripts.Events
     public class BuildingPlacementEventData
     {
         public GameObject BuildingPrefab;
-        public Vector2 BuildingPosition;
+        public Vector2 OffsetFromBottomLeft;
+        public int Index;
     }
 }

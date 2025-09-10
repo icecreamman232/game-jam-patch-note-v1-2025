@@ -23,12 +23,13 @@ namespace SGGames.Scripts.Ship
             m_initialPosition = transform.localPosition;
         }
 
-        private void OnBuildingPlaced()
+        private void OnBuildingPlaced(int index, Vector2 offset)
         {
             m_buildingPlacementEvent.Raise(new BuildingPlacementEventData
             {
                 BuildingPrefab = m_buildingPrefab,
-                BuildingPosition = transform.position
+                OffsetFromBottomLeft = offset,
+                Index = index,
             });
         }
 

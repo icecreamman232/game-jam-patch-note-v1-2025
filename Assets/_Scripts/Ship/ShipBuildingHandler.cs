@@ -1,6 +1,7 @@
 using System;
 using SGGames.Scripts.Events;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 
 namespace SGGames.Scripts.Ship
@@ -10,6 +11,7 @@ namespace SGGames.Scripts.Ship
         [SerializeField] private BuildingPlacementEvent m_buildingPlacementEvent;
         [SerializeField] private Vector2Int m_buildAreaSize;
         [SerializeField] private GridController m_gridController;
+        [SerializeField] private Transform[] m_pivots;
 
         public GridController GridController => m_gridController;
         
@@ -27,7 +29,10 @@ namespace SGGames.Scripts.Ship
 
         public void CreateBuilding(BuildingPlacementEventData eventData)
         {
-            Instantiate(eventData.BuildingPrefab, eventData.BuildingPosition, Quaternion.identity, transform);
+            var building = Instantiate(eventData.BuildingPrefab, transform, false);
+            Debug.Log($"Index {eventData.Index}");
+            building.transform.position = (Vector2)m_pivots[eventData.Index].position + eventData.OffsetFromBottomLeft;
+            building.transform.localRotation = Quaternion.identity;
         }
     }
 }

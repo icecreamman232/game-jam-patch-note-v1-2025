@@ -22,6 +22,11 @@ namespace SGGames.Scripts.Ship
             m_halfGridSizeX = m_gridSize.x / 2;
             m_halfGridSizeY = m_gridSize.y / 2;
 
+            CalculateGridBounds();
+        }
+
+        public void CalculateGridBounds()
+        {
             m_bottomLeft = m_grid.CellToWorld(new Vector3Int(-m_halfGridSizeX, -m_halfGridSizeY, 0));
             m_topRight = m_grid.CellToWorld(new Vector3Int(m_gridSize.x - m_halfGridSizeX, m_gridSize.y - m_halfGridSizeX, 0));
         }

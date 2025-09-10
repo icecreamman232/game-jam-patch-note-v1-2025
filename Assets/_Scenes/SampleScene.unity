@@ -1198,6 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39273c0577c5b74fb712f2806cbc3ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiEvent: {fileID: 11400000, guid: a6a39ba22d1f1e54abb960dabe4bda4e, type: 2}
   m_pixelPerfectCamera: {fileID: 519420033}
   m_cameraRefZoomSize: {x: 384, y: 216}
   m_shipMovement: {fileID: 1997348476}
@@ -1500,6 +1501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fb556796c3c0847812865aa7f8827e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_uiEvent: {fileID: 11400000, guid: a6a39ba22d1f1e54abb960dabe4bda4e, type: 2}
   forwardSpeed: 4
   reverseSpeed: 2
   rotationSpeed: 30

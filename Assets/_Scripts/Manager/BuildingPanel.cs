@@ -1,5 +1,6 @@
 using System;
 using SGGames.Scripts.Core;
+using SGGames.Scripts.Events;
 using SGGames.Scripts.Ship;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -8,6 +9,7 @@ namespace SGGames.Scripts.Managers
 {
     public class BuildingPanel : MonoBehaviour
     {
+        [SerializeField] private UIEvent uiEvent;
         [Header("Camera")]
         [SerializeField] private PixelPerfectCamera m_pixelPerfectCamera;
         [SerializeField] private Vector2Int m_cameraRefZoomSize;
@@ -54,7 +56,7 @@ namespace SGGames.Scripts.Managers
         private void OpenPanel()
         {
             InputManager.SetActive(false);
-            m_shipMovement.SetMovementPermission(false);
+            uiEvent.Raise(UIEventState.OpenBuildMode);
             m_buildingGroup.SetActive(true);
             PlayZoomInTween(() =>
             {
@@ -72,7 +74,7 @@ namespace SGGames.Scripts.Managers
                 {
                     building.ResetPosition();
                 }
-                m_shipMovement.SetMovementPermission(true);
+                uiEvent.Raise(UIEventState.CloseBuildMode);
             });
         }
 

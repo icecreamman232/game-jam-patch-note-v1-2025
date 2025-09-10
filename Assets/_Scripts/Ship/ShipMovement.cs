@@ -1,5 +1,6 @@
 using System;
 using SGGames.Scripts.Core;
+using SGGames.Scripts.Events;
 using SGGames.Scripts.Managers;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace SGGames.Scripts.Ship
 {
     public class ShipMovement : MonoBehaviour
     {
+        [SerializeField] private UIEvent m_uiEvent;
         [Header("Movement Settings")]
         [SerializeField] private float forwardSpeed = 10f;
         [SerializeField] private float reverseSpeed = 5f;
@@ -32,12 +34,14 @@ namespace SGGames.Scripts.Ship
             {
                 inputManager.OnMoveInputCallback += OnMoveInput;
             }
-
+            m_uiEvent.AddListener(OnReceiveUIEvent);
             m_canMove = true;
         }
 
         private void OnDestroy()
         {
+            m_uiEvent.RemoveListener(OnReceiveUIEvent);
+            
             // Unsubscribe from input events
             if (inputManager != null)
             {
@@ -160,6 +164,18 @@ namespace SGGames.Scripts.Ship
             }
         
             return false;
+        }
+        
+        private void OnReceiveUIEvent(UIEventState uiState)
+        {
+            if (uiState == UIEventState.OpenBuildMode)
+            {
+                SetMovementPermission(false);
+            }
+            else if (uiState == UIEventState.CloseBuildMode)
+            {
+                SetMovementPermission(true);
+            }
         }
 
 

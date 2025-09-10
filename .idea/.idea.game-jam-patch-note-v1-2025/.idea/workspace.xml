@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/NormalProjectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/ShipStateEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Manager/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/BuildSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,7 +134,7 @@
       <workItem from="1757429170405" duration="357000" />
       <workItem from="1757430040149" duration="9838000" />
       <workItem from="1757443692916" duration="1307000" />
-      <workItem from="1757468114924" duration="6644000" />
+      <workItem from="1757468114924" duration="7377000" />
     </task>
     <servers />
   </component>

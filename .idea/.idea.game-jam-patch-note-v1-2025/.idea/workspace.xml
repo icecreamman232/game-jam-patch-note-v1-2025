@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Template 1x1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Template 1x1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Art/weapon placeholder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/weapon placeholder.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Shoot At Direction Template.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Shoot At Direction Template.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +139,7 @@
       <workItem from="1757429170405" duration="357000" />
       <workItem from="1757430040149" duration="9838000" />
       <workItem from="1757443692916" duration="1307000" />
-      <workItem from="1757468114924" duration="2888000" />
+      <workItem from="1757468114924" duration="4026000" />
     </task>
     <servers />
   </component>

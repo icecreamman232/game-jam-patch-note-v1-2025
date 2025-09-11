@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8032314e2a0cb9442bfe632760075c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_onSoulHarvest: {fileID: 11400000, guid: 2e15115f895a9e74fa2345cfa3120fc2, type: 2}
   m_politicalSystem: 0
   m_population: 5
   m_birthRate: 0.2

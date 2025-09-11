@@ -7,11 +7,15 @@ namespace SGGames.Scripts.Managers
 {
     public class ContinentManager : MonoBehaviour, IBootStrap, IGameService
     {
+        [SerializeField] private int m_currentYear;
         [SerializeField] private GameEvent m_gameEvent;
         [SerializeField] private Continent.Continent[] m_continents;
         
+        public int CurrentYear => m_currentYear;
+        
         public void Install()
         {
+            m_currentYear = 1;
             ServiceLocator.RegisterService<ContinentManager>(this);
             m_gameEvent.AddListener(OnGameEventChanged);
         }
@@ -28,6 +32,8 @@ namespace SGGames.Scripts.Managers
             {
                 continent.EndYear();
             }
+
+            m_currentYear++;
             InputManager.SetActive(true);
         }
         

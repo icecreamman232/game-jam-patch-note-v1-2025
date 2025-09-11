@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Build Slot Template.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Build Slot Template.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building Template 1x1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building Template 1x1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building Template 2x2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building Template 2x2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Continent Template.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Continent Template.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Continent/Continent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Continent/Continent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/ContinentManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/ContinentManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Continent/ContinentInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/ContinentSelectionEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/SoulHarvestEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Manager/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/UI/HudController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -101,13 +98,15 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24216">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="24216" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -141,7 +140,7 @@
       <workItem from="1757430040149" duration="9838000" />
       <workItem from="1757443692916" duration="1307000" />
       <workItem from="1757468114924" duration="7377000" />
-      <workItem from="1757555607810" duration="8518000" />
+      <workItem from="1757555607810" duration="9778000" />
     </task>
     <servers />
   </component>

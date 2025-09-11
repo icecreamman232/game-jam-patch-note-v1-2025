@@ -34,6 +34,7 @@ namespace SGGames.Scripts.Managers
             }
 
             m_currentYear++;
+            m_gameEvent.Raise(GameEventType.UpdateWorld);
             InputManager.SetActive(true);
         }
         

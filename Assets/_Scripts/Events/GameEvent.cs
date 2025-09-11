@@ -11,5 +11,7 @@ namespace SGGames.Scripts.Events
     public enum GameEventType
     {
         YearEnd,
+        UpdateWorld,
+        NewYearStarted,
     }
 }

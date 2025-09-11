@@ -10,8 +10,8 @@ namespace SGGames.Scripts.Managers
         [SerializeField] private SoulHarvestEvent m_soulHarvestEvent;
         [SerializeField] private float m_totalSoulHarvested;
         [SerializeField] private float m_exchangeRateForPower;
-        [SerializeField] private int m_lastPowerGained;
         
+        public bool CanUseSoul(int amount) => m_totalSoulHarvested >= amount;
         public float TotalSoulHarvested => m_totalSoulHarvested;
         
         public void Install()
@@ -28,23 +28,23 @@ namespace SGGames.Scripts.Managers
             ServiceLocator.UnregisterService<SoulManager>();
         }
 
-        private void Reset()
+        public void UseSoul(int amount)
         {
-            m_totalSoulHarvested = 0;
+            m_totalSoulHarvested -= amount;
+            if (m_totalSoulHarvested < 0)
+            {
+                m_totalSoulHarvested = 0;
+            }
         }
         
         private void OnGameEventChanged(GameEventType gameEventType)
         {
-            if (gameEventType == GameEventType.NewYearStarted)
-            {
-                Reset();
-            }
+            
         }
 
         private void OnSoulHarvested(SoulHarvestData soulHarvestData)
         {
             m_totalSoulHarvested += soulHarvestData.Souls;
-            m_lastPowerGained = (int) (soulHarvestData.Souls * m_exchangeRateForPower);
         }
     }
 }

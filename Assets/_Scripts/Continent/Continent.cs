@@ -40,8 +40,7 @@ namespace SGGames.Scripts.Continent
         [SerializeField] private Race m_race;
         [SerializeField] private Economy m_economy;
 
-        
-        private void OnYearEnd()
+        public void EndYear()
         {
             var newPopulation = m_birthRate + m_deathRate;
             m_population += newPopulation;

@@ -13,5 +13,9 @@ namespace SGGames.Scripts.Events
         YearEnd,
         UpdateWorld,
         NewYearStarted,
+        
+        
+        GameWin = 100,
+        GameLose = 101,
     }
 }

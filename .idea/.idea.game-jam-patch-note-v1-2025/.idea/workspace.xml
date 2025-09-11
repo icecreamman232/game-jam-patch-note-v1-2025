@@ -7,12 +7,8 @@
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/ContinentManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/ContinentManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/SoulManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/SoulManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/HudController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/HudController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/LoseResultScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/LoseResultScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/ResultScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/ResultScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/UI/WinResultScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/UI/WinResultScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/ContinentSelectionEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/SoulHarvestEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/TotalSoulHarvestEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/UpdateYearEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Manager/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Manager/WorldManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -148,7 +145,7 @@
       <workItem from="1757468114924" duration="7377000" />
       <workItem from="1757555607810" duration="11517000" />
       <workItem from="1757595494829" duration="2228000" />
-      <workItem from="1757606819958" duration="337000" />
+      <workItem from="1757606819958" duration="1046000" />
     </task>
     <servers />
   </component>

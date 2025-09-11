@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Soul: 999'
+  m_text: 'Soul: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1701,6 +1701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_gameEvent: {fileID: 11400000, guid: dc97e1297bdf0ea45910281528fa21ba, type: 2}
   m_soulHarvestEvent: {fileID: 11400000, guid: 2e15115f895a9e74fa2345cfa3120fc2, type: 2}
+  m_totalSoulHarvestEvent: {fileID: 11400000, guid: fb0915f859cb02c4498cdb4356d96545, type: 2}
   m_totalSoulHarvested: 0
   m_exchangeRateForPower: 10
 --- !u!1 &1205270625
@@ -2500,8 +2501,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gameEvent: {fileID: 11400000, guid: dc97e1297bdf0ea45910281528fa21ba, type: 2}
-  m_yearText: {fileID: 31056873}
   m_updateYearEvent: {fileID: 11400000, guid: a68fff250b6b87d4a99dfc692977909d, type: 2}
+  m_totalSoulHarvestEvent: {fileID: 11400000, guid: fb0915f859cb02c4498cdb4356d96545, type: 2}
+  m_yearText: {fileID: 31056873}
+  m_totalSoulText: {fileID: 678839286}
+  m_totalSoulTextOnBar: {fileID: 342593977}
   m_endYearButton: {fileID: 354144135}
 --- !u!1001 &887269316315638521
 PrefabInstance:

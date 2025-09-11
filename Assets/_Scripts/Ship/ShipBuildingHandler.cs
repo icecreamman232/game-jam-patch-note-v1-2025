@@ -33,6 +33,7 @@ namespace SGGames.Scripts.Ship
             Debug.Log($"Index {eventData.Index}");
             building.transform.position = (Vector2)m_pivots[eventData.Index].position + eventData.OffsetFromBottomLeft;
             building.transform.localRotation = Quaternion.identity;
+            building.gameObject.SetActive(false);
         }
     }
 }

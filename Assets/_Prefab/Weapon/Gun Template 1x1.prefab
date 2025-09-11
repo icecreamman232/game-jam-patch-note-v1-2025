@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8912902986827259890}
   - component: {fileID: 4476934161129432619}
+  - component: {fileID: 7510691763207201947}
   m_Layer: 0
   m_Name: Gun Template 1x1
   m_TagString: Untagged
@@ -51,6 +52,20 @@ MonoBehaviour:
   m_pooledObjectActiveByDefault: 0
   m_objectToPool: {fileID: 0}
   m_poolSize: 20
+--- !u!114 &7510691763207201947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972349625235097045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9fa13e3463dac43a74ffbd9f5f3656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_uiEvent: {fileID: 11400000, guid: a6a39ba22d1f1e54abb960dabe4bda4e, type: 2}
+  m_model: {fileID: 6731468433149141365}
 --- !u!1 &6731468433149141365
 GameObject:
   m_ObjectHideFlags: 0

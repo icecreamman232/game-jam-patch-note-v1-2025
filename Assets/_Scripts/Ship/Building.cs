@@ -1,3 +1,4 @@
+using System;
 using SGGames.Scripts.Events;
 using UnityEngine;
 
@@ -5,37 +6,29 @@ namespace SGGames.Scripts.Ship
 {
     public class Building : MonoBehaviour
     {
-        [SerializeField] private BuildingPlacementEvent m_buildingPlacementEvent;
-        [SerializeField] private GameObject m_buildingPrefab;
-        [SerializeField] private Vector2Int m_size;
-        [SerializeField] private BuildingInputHandler m_inputHandler;
-        
-        private Vector2 m_initialPosition;
-        
-        public BuildingInputHandler InputHandler => m_inputHandler;
-        public Vector2Int Size => m_size;
-        public GameObject Prefab => m_buildingPrefab;
-        
+        [SerializeField] private UIEvent m_uiEvent;
+        [SerializeField] private GameObject m_model;
 
         private void Awake()
         {
-            m_inputHandler.OnBuildingPlaced = OnBuildingPlaced;
-            m_initialPosition = transform.localPosition;
+            m_uiEvent.AddListener(OnReceiveUIEvent);
         }
 
-        private void OnBuildingPlaced(int index, Vector2 offset)
+        private void OnDestroy()
         {
-            m_buildingPlacementEvent.Raise(new BuildingPlacementEventData
+            m_uiEvent.RemoveListener(OnReceiveUIEvent);
+        }
+
+        private void OnReceiveUIEvent(UIEventState uiEventState)
+        {
+            if (uiEventState == UIEventState.OpenBuildMode)
             {
-                BuildingPrefab = m_buildingPrefab,
-                OffsetFromBottomLeft = offset,
-                Index = index,
-            });
-        }
-
-        public void ResetPosition()
-        {
-            transform.localPosition = m_initialPosition;
+                this.gameObject.SetActive(false);
+            }
+            else if (uiEventState == UIEventState.CloseBuildMode)
+            {
+                this.gameObject.SetActive(true);
+            }
         }
     }
 }

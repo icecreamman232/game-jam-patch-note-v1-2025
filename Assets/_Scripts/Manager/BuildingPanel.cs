@@ -18,7 +18,7 @@ namespace SGGames.Scripts.Managers
         [SerializeField] private ShipBuildingHandler m_shipBuildingHandler;
         [SerializeField] private GameObject m_buildingGroup;
         [SerializeField] private GameObject m_shipLayout;
-        [SerializeField] private Ship.Building[] m_buildings;
+        [SerializeField] private Ship.BuildingAvatar[] m_buildings;
         
         
         private bool m_isOpened;

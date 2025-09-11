@@ -6,11 +6,62 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Template 1x1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Template 1x1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingAvatar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingAvatar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipBuildingHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipBuildingHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Art/rect-64x64-white-placeholder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/rect-64x64-white-placeholder.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Art/rect-64x96-white-placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Art/rect-64x96-white-placeholder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Art/weapon placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Art/weapon placeholder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Data/Events/Building Placement Event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Data/Events/Building Placement Event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Data/Events/UI Event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Data/Events/UI Event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building/Cannon Building.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Building/Cannon Building.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Cannon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Cannon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Template 1x1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Gun Template 1x1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Normal Projectile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Normal Projectile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Projectile Template.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Weapon/Projectile Template.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Cannon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Cannon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/NormalProjectile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/NormalProjectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Projectile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Projectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Weapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Weapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Events/UIEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Events/UIEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/BuildingPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildSlot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildSlot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingAvatar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingAvatar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingInputHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingInputHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipBuildingHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipBuildingHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipVisual.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Ship/ShipVisual.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,16 +75,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aa16e589d49845a8b3554f53d3616fe42f400/51/6b2c7fed/Physics2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Cannon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/NormalProjectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Buiding/Weapon/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/BuildingPlacementEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Continent/Continent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Continent/ContinentInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Events/ContinentSelectionEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Manager/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/BuildSlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/Building.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/BuildingAvatar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Ship/GridController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -140,7 +187,7 @@
       <workItem from="1757430040149" duration="9838000" />
       <workItem from="1757443692916" duration="1307000" />
       <workItem from="1757468114924" duration="7377000" />
-      <workItem from="1757555607810" duration="316000" />
+      <workItem from="1757555607810" duration="7511000" />
     </task>
     <servers />
   </component>

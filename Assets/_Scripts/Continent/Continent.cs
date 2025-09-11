@@ -34,6 +34,7 @@ namespace SGGames.Scripts.Continent
     
     public class Continent : MonoBehaviour
     {
+        [SerializeField] private ContinentInputHandler m_continentInputHandler;
         [SerializeField] private SoulHarvestEvent m_onSoulHarvest;
         [Header("Continent Data")]
         [SerializeField] private PoliticalSystem m_politicalSystem;
@@ -45,9 +46,18 @@ namespace SGGames.Scripts.Continent
         
         private SoulHarvestData m_onSoulHarvestData;
 
+
+        public Action<Continent> OnSelect;
+
         private void Awake()
         {
             m_onSoulHarvestData = new SoulHarvestData();
+            m_continentInputHandler.OnSelectedChanged = OnSelectedChanged;
+        }
+
+        private void OnSelectedChanged(bool isSelected)
+        {
+            OnSelect?.Invoke(isSelected ? this : null);
         }
 
         public void EndYear()

@@ -13,9 +13,12 @@ namespace SGGames.Scripts.Managers
         [SerializeField] private GameEvent m_gameEvent;
         [SerializeField] private Continent.Continent[] m_continents;
         
+        private Continent.Continent m_selectedContinent;
         private UpdateYearEventData m_updateYearEventData;
         
         public int CurrentYear => m_currentYear;
+        
+        public Continent.Continent SelectedContinent => m_selectedContinent;
         
         public void Install()
         {
@@ -23,6 +26,15 @@ namespace SGGames.Scripts.Managers
             ServiceLocator.RegisterService<ContinentManager>(this);
             m_gameEvent.AddListener(OnGameEventChanged);
             m_updateYearEventData = new UpdateYearEventData();
+            foreach (var continent in m_continents)
+            {
+                continent.OnSelect = OnSelect;
+            }
+        }
+
+        private void OnSelect(Continent.Continent selectedContinent)
+        {
+            m_selectedContinent = selectedContinent;
         }
 
         public void Uninstall()

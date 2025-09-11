@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace SGGames.Scripts.Continent
@@ -8,9 +9,12 @@ namespace SGGames.Scripts.Continent
         
         public bool IsSelected => m_isSelected;
         
+        public Action<bool> OnSelectedChanged;
+        
         private void OnMouseDown()
         {
             m_isSelected = !m_isSelected;
+            OnSelectedChanged?.Invoke(m_isSelected);
         }
     }
 }

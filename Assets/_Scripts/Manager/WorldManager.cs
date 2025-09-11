@@ -7,11 +7,13 @@ namespace SGGames.Scripts.Managers
     public class WorldManager : MonoBehaviour, IGameService, IBootStrap
     {
         [SerializeField] private int m_worldLevel;
-        [SerializeField] private float m_requireSouls;
+        [SerializeField] private float m_currentRequireSouls;
         [SerializeField] private WorldLevelProgress m_worldLevelProgress;
         [SerializeField] private GameEvent m_gameEvent;
         
         private SoulManager m_soulManager;
+        
+        public float RequireSouls => m_worldLevelProgress.WorldLevels[m_worldLevel - 1].SoulHarvestedRequire;
         
         public void Install()
         {
@@ -20,7 +22,7 @@ namespace SGGames.Scripts.Managers
             m_gameEvent.AddListener(OnGameEventChanged);
             m_worldLevel = 1;
 
-            m_requireSouls = m_worldLevelProgress.WorldLevels[m_worldLevel - 1].SoulHarvestedRequire;
+            m_currentRequireSouls = m_worldLevelProgress.WorldLevels[m_worldLevel - 1].SoulHarvestedRequire;
         }
 
         public void Uninstall()
@@ -39,8 +41,8 @@ namespace SGGames.Scripts.Managers
         {
             if (gameEventType == GameEventType.UpdateWorld)
             {
-                m_requireSouls -= m_soulManager.TotalSoulHarvested;
-                if (m_requireSouls <= 0)
+                m_currentRequireSouls -= m_soulManager.TotalSoulHarvested;
+                if (m_currentRequireSouls <= 0)
                 {
                     UpgradeWorld();
                 }

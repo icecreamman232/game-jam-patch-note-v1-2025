@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.485
+  m_FillAmount: 0.268
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1516,7 +1516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_worldLevel: 1
-  m_requireSouls: 0
+  m_currentRequireSouls: 0
   m_worldLevelProgress: {fileID: 11400000, guid: 5caed356cdc78b145bb13c6ec80d02e9, type: 2}
   m_gameEvent: {fileID: 11400000, guid: dc97e1297bdf0ea45910281528fa21ba, type: 2}
 --- !u!1 &809382693
@@ -2506,6 +2506,7 @@ MonoBehaviour:
   m_yearText: {fileID: 31056873}
   m_totalSoulText: {fileID: 678839286}
   m_totalSoulTextOnBar: {fileID: 342593977}
+  m_worldSoulBar: {fileID: 584622603}
   m_endYearButton: {fileID: 354144135}
 --- !u!1001 &887269316315638521
 PrefabInstance:

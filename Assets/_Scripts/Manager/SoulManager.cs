@@ -52,7 +52,7 @@ namespace SGGames.Scripts.Managers
         private void OnSoulHarvested(SoulHarvestData soulHarvestData)
         {
             m_totalSoulHarvested += soulHarvestData.Souls;
-            
+
             m_totalSoulHarvestEventData.TotalSoulHarvested = m_totalSoulHarvested;
             m_totalSoulHarvestEvent.Raise(m_totalSoulHarvestEventData);
         }

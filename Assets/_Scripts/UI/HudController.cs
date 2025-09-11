@@ -1,6 +1,9 @@
+using SGGames.Scripts.Core;
 using SGGames.Scripts.Events;
+using SGGames.Scripts.Managers;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SGGames.Scripts.UI
 {
@@ -14,6 +17,7 @@ namespace SGGames.Scripts.UI
         [SerializeField] private TextMeshProUGUI m_yearText;
         [SerializeField] private TextMeshProUGUI m_totalSoulText;
         [SerializeField] private TextMeshProUGUI m_totalSoulTextOnBar;
+        [SerializeField] private Image m_worldSoulBar;
         [SerializeField] private ButtonController m_endYearButton;
 
 
@@ -22,6 +26,8 @@ namespace SGGames.Scripts.UI
             m_endYearButton.OnClickCallback += OnPressEndYearButton;
             m_updateYearEvent.AddListener(OnUpdateYear);
             m_totalSoulHarvestEvent.AddListener(OnUpdateSoulHarvest);
+            m_worldSoulBar.fillAmount = 0;
+            m_totalSoulTextOnBar.text = "0/100";
         }
 
         private void OnDestroy()
@@ -33,7 +39,11 @@ namespace SGGames.Scripts.UI
         
         private void OnUpdateSoulHarvest(TotalSoulHarvestData soulHarvestData)
         {
-            m_totalSoulText.text = $"Souls: {soulHarvestData.TotalSoulHarvested}";
+            var requireSoul = ServiceLocator.GetService<WorldManager>().RequireSouls;
+            var totalSoul = soulHarvestData.TotalSoulHarvested;
+            m_totalSoulText.text = $"Souls: {totalSoul}";
+            m_totalSoulTextOnBar.text = $"{totalSoul}/{requireSoul}";
+            m_worldSoulBar.fillAmount = MathHelpers.Remap(totalSoul, 0, requireSoul, 0, 1);
         }
         
         private void OnUpdateYear(UpdateYearEventData updateYearEventData)

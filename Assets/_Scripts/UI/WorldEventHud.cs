@@ -18,6 +18,11 @@ namespace SGGames.Scripts.UI
             m_soulManager = ServiceLocator.GetService<SoulManager>();
             m_worldEventController = ServiceLocator.GetService<WorldEventController>();
             m_continentManager = ServiceLocator.GetService<ContinentManager>();
+            
+            foreach (var card in m_worldEventCard)
+            {
+                card.OnBoughtEvent = OnBoughtWorldEvent;
+            }
         }
 
         public void Uninstall()
@@ -25,25 +30,17 @@ namespace SGGames.Scripts.UI
             
         }
         
-        
-        private void Awake()
-        {
-            foreach (var card in m_worldEventCard)
-            {
-                card.OnBoughtEvent = OnBoughtWorldEvent;
-            }
-        }
 
         public void InitializeCard(int index, WorldEventData data)
         {
-            m_worldEventCard[index].Initialize(data);
+            m_worldEventCard[index].Initialize(data, m_continentManager);
         }
         
         private void OnBoughtWorldEvent(WorldEventData data, int slotIndex)
         {
             m_soulManager.UseSoul(data.Cost);
             var newEvent = m_worldEventController.GetRandomWorldEvent();
-            m_worldEventCard[slotIndex].Initialize(newEvent);
+            m_worldEventCard[slotIndex].Initialize(newEvent, m_continentManager);
         }
     }
 }

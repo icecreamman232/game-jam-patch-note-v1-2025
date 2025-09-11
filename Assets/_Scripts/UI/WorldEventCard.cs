@@ -1,9 +1,9 @@
 using System;
-using SGGames.Scripts.Core;
 using SGGames.Scripts.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace SGGames.Scripts.UI
 {
@@ -11,9 +11,11 @@ namespace SGGames.Scripts.UI
     {
         [SerializeField] private int m_slotIndex;
         [SerializeField] private WorldEventInfoDisplayer m_worldEventInfoDisplayer;
+        [SerializeField] private Image m_icon;
         [SerializeField] private ButtonController m_buyButton;
         [SerializeField] private TextMeshProUGUI m_costText;
         private WorldEventData m_worldEventData;
+        private ContinentManager m_continentManager;
         
         public Action<WorldEventData, int> OnBoughtEvent;
         
@@ -28,8 +30,10 @@ namespace SGGames.Scripts.UI
             m_buyButton.OnClickCallback -= OnPressBuyButton;
         }
 
-        public void Initialize(WorldEventData data)
+        public void Initialize(WorldEventData data, ContinentManager continentManager)
         {
+            m_continentManager = continentManager;
+            m_icon.sprite = data.Icon;
             m_worldEventData = data;
             m_costText.text = $"{data.Cost} souls";
             m_worldEventInfoDisplayer.FillData(data);
@@ -47,6 +51,7 @@ namespace SGGames.Scripts.UI
 
         private void OnPressBuyButton()
         {
+            if (m_continentManager.SelectedContinent == null) return;
             OnBoughtEvent?.Invoke(m_worldEventData, m_slotIndex);
         }
     }

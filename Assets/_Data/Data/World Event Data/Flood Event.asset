@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventName: Flood
   EventDescription: Flood Desc
+  Icon: {fileID: 1309005444, guid: 897ff8002e5a1b6469933556206c16f0, type: 3}
   EventType: 0
   MinDuration: 1
   MaxDuration: 2

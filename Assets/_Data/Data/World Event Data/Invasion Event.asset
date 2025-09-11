@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventName: Invasion
   EventDescription: Invasion Desc
+  Icon: {fileID: 451866681, guid: 897ff8002e5a1b6469933556206c16f0, type: 3}
   EventType: 3
   MinDuration: 1
   MaxDuration: 2

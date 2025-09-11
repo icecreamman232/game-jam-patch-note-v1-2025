@@ -14,6 +14,9 @@ namespace SGGames.Scripts.UI
         [SerializeField] private TextMeshProUGUI m_birthRateText;
         [SerializeField] private TextMeshProUGUI m_deathRateText;
 
+        private const float k_hideLocalX = -100;
+        private const float k_normalLocalX = 10;
+        
         private void Awake()
         {
             Hide();
@@ -26,7 +29,22 @@ namespace SGGames.Scripts.UI
             m_populationText.text = $"Population: {continent.Population}";
             m_birthRateText.text = $"Birth Rate: {continent.BirthRate}";
             m_deathRateText.text = $"Death Rate: {continent.DeathRate}";
-            m_canvasGroup.Activate();
+            
+            m_canvasGroup.alpha = 0;
+            var rectTransform = (RectTransform) transform;
+            var anchoredPosition = rectTransform.anchoredPosition;
+            anchoredPosition.x = k_hideLocalX;
+            rectTransform.anchoredPosition = anchoredPosition;
+            
+            m_canvasGroup.LeanAlpha(1,0.2f)
+                .setEase(LeanTweenType.easeOutQuad);
+            
+            rectTransform.LeanMoveX(k_normalLocalX, 0.3f)
+                .setEase(LeanTweenType.easeOutQuad)
+                .setOnComplete(() =>
+                {
+                    m_canvasGroup.Activate();
+                });
         }
 
         public void Hide()

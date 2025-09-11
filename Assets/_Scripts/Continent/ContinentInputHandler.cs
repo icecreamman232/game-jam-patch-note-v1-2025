@@ -16,5 +16,10 @@ namespace SGGames.Scripts.Continent
             m_isSelected = !m_isSelected;
             OnSelectedChanged?.Invoke(m_isSelected);
         }
+        
+        public void Deselect()
+        {
+            m_isSelected = false;
+        }
     }
 }

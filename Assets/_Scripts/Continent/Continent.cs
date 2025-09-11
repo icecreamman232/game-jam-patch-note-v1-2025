@@ -34,6 +34,7 @@ namespace SGGames.Scripts.Continent
     
     public class Continent : MonoBehaviour
     {
+        [SerializeField] private string m_continentName;
         [SerializeField] private ContinentInputHandler m_continentInputHandler;
         [SerializeField] private SoulHarvestEvent m_onSoulHarvest;
         [Header("Continent Data")]
@@ -46,7 +47,13 @@ namespace SGGames.Scripts.Continent
         
         private SoulHarvestData m_onSoulHarvestData;
 
-
+        public string ContinentName => m_continentName;
+        public PoliticalSystem PoliticalSystem => m_politicalSystem;
+        public float Population => m_population;
+        public float BirthRate => m_birthRate;
+        public float DeathRate => m_deathRate;
+        public Race Race => m_race;
+        public Economy Economy => m_economy;
         public Action<Continent> OnSelect;
 
         private void Awake()
@@ -58,6 +65,11 @@ namespace SGGames.Scripts.Continent
         private void OnSelectedChanged(bool isSelected)
         {
             OnSelect?.Invoke(isSelected ? this : null);
+        }
+
+        public void Deselect()
+        {
+            m_continentInputHandler.Deselect();
         }
 
         public void EndYear()

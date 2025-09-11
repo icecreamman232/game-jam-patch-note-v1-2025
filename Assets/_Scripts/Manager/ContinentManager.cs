@@ -1,6 +1,7 @@
 using System.Collections;
 using SGGames.Scripts.Core;
 using SGGames.Scripts.Events;
+using SGGames.Scripts.UI;
 using UnityEngine;
 
 namespace SGGames.Scripts.Managers
@@ -11,6 +12,7 @@ namespace SGGames.Scripts.Managers
         [SerializeField] private int m_maxYear;
         [SerializeField] private UpdateYearEvent m_updateYearEvent;
         [SerializeField] private GameEvent m_gameEvent;
+        [SerializeField] private ContinentInfoUI m_infoUI;
         [SerializeField] private Continent.Continent[] m_continents;
         
         private Continent.Continent m_selectedContinent;
@@ -35,6 +37,24 @@ namespace SGGames.Scripts.Managers
         private void OnSelect(Continent.Continent selectedContinent)
         {
             m_selectedContinent = selectedContinent;
+            foreach (var continent in m_continents)
+            {
+                if (continent != selectedContinent)
+                {
+                    continent.Deselect();
+                }
+            }
+            
+            
+            if (selectedContinent != null)
+            {
+                m_infoUI.Show(selectedContinent);
+            }
+            else
+            {
+                m_infoUI.Hide();
+            }
+            
         }
 
         public void Uninstall()

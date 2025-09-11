@@ -9,6 +9,7 @@ public class WorldEventData : ScriptableObject
     public WorldEventType EventType;
     public float MinDuration;
     public float MaxDuration;
+    public float Cost;
     public WorldEventData[] EventSpawnedOnCompleted;
 }
 

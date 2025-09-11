@@ -22,6 +22,7 @@ namespace SGGames.Scripts.Managers
             ServiceLocator.RegisterService<SoulManager>(this);
             m_soulHarvestEvent.AddListener(OnSoulHarvested);
             m_gameEvent.AddListener(OnGameEventChanged);
+            m_totalSoulHarvested = 30;
             m_totalSoulHarvestEventData = new TotalSoulHarvestData();
         }
 
@@ -32,7 +33,7 @@ namespace SGGames.Scripts.Managers
             ServiceLocator.UnregisterService<SoulManager>();
         }
 
-        public void UseSoul(int amount)
+        public void UseSoul(float amount)
         {
             m_totalSoulHarvested -= amount;
             if (m_totalSoulHarvested < 0)

@@ -14,12 +14,27 @@ public class WorldEventData : ScriptableObject
     public WorldEventData[] EventSpawnedOnCompleted;
 }
 
+public enum WorldEventID
+{
+    //Natural Cause    
+    Flood,
+    HeavyRain,
+    Earthquake,
+    Tornado,
+    
+    
+    //Human Cause start at 100
+    Invasion = 100,
+    
+    
+    
+    //Invention start at 200
+    
+}
 
 public enum WorldEventType
 {
     NaturalCause,
     HumanCause,
-    Corruption,
-    Conflict,
     Invention,
 }

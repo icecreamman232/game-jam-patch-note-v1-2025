@@ -40,6 +40,8 @@ namespace SGGames.Scripts.UI
         {
             m_soulManager.UseSoul(data.Cost);
             var newEvent = m_worldEventController.GetRandomWorldEvent();
+            var continentName = m_continentManager.SelectedContinent.ContinentName;
+            m_worldEventController.AddEvent(newEvent, continentName);
             m_worldEventCard[slotIndex].Initialize(newEvent, m_continentManager);
         }
     }

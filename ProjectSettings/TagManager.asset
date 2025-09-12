@@ -14,7 +14,7 @@ TagManager:
   - Building Grid
   - Obstacle
   - Enemy
-  - 
+  - Drop Area
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1531137391
+    locked: 0
+  - name: UI
+    uniqueID: 670971793
     locked: 0
   m_RenderingLayers:
   - Default

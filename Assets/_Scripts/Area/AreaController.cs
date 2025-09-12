@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using SGGames.Scripts.Core;
 using UnityEngine;
 
 [Serializable]
@@ -25,6 +26,7 @@ public class AreaController : MonoBehaviour
             card.transform.localPosition = Vector3.zero;
             emptyPivot.OccupiedCard = card;
             
+            ServiceLocator.GetService<CardManager>().RemoveFromPool(card);
             m_deathCounter.ApplyCard(card);
             return true;
         }

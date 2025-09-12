@@ -37,6 +37,11 @@ public class CardManager : MonoBehaviour, IBootStrap, IGameService
             m_currentCards.Add(card);
         }
     }
+
+    public void RemoveFromPool(Card card)
+    {
+        m_currentCards.Remove(card);
+    }
     
     private void Reroll()
     {
@@ -45,6 +50,7 @@ public class CardManager : MonoBehaviour, IBootStrap, IGameService
         m_soulManager.SpentSoul(m_currentRerollPrice);
         foreach (var card in m_currentCards)
         {
+            if (card == null) continue;
             Destroy(card.gameObject);
         }
         m_currentCards.Clear();

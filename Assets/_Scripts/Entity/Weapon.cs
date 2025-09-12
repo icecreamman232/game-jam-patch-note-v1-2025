@@ -22,8 +22,8 @@ public class Weapon : MonoBehaviour
         if (!CanShoot()) return;
         
         var newProjectileGO = m_projectilePool.GetPooledGameObject();
-        newProjectileGO.transform.position = m_projectileSpawnPoint.position;
         newProjectileGO.transform.up = direction;
+        newProjectileGO.transform.position = m_projectileSpawnPoint.position;
         var projectile = newProjectileGO.GetComponent<Projectile>();
         projectile.Spawn();
         StartCoroutine(OnCooldown());

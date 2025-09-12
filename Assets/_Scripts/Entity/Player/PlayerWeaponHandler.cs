@@ -18,6 +18,16 @@ public class PlayerWeaponHandler : MonoBehaviour
       ServiceLocator.GetService<InputManager>().OnAttackInputCallback -= OnAttackInputCallback;
    }
 
+   private void Update()
+   {
+      UpdateWeaponRotation();
+   }
+
+   private void UpdateWeaponRotation()
+   {
+      m_currentWeapon.transform.right = m_playerAiming.AimDirection;
+   }
+
    private void OnAttackInputCallback()
    {
       m_currentWeapon.Shoot(m_playerAiming.AimDirection);

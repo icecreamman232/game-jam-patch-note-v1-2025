@@ -16,13 +16,13 @@ public class Projectile : MonoBehaviour
     public void Spawn()
     {
         m_travelledDistance = 0;
-        transform.position = m_startPos;
+        m_startPos = transform.position;
     }
     
     protected virtual void UpdateMovement()
     {
         transform.position += transform.up * (m_speed * Time.deltaTime);
-        m_travelledDistance = Vector2.Distance(transform.position, Vector2.zero);
+        m_travelledDistance = Vector2.Distance(m_startPos, transform.position);
         if (m_travelledDistance >= m_range)
         {
             DestroyBullet();

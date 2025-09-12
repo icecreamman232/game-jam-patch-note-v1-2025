@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerWeaponHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerWeaponHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,7 @@
       <workItem from="1757595494829" duration="2228000" />
       <workItem from="1757606819958" duration="12215000" />
       <workItem from="1757641755165" duration="763000" />
-      <workItem from="1757693538884" duration="3599000" />
+      <workItem from="1757693538884" duration="4769000" />
     </task>
     <servers />
   </component>
@@ -176,19 +173,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Entity/Weapon.cs</url>
-          <line>14</line>
-          <properties documentPath="D:\game-jam-patch-note-v1-2025\Assets\_Scripts\Entity\Weapon.cs" containingFunctionPresentation="Method 'CanShoot'">
-            <startOffsets>
-              <option value="379" />
-            </startOffsets>
-            <endOffsets>
-              <option value="396" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -18,6 +18,11 @@ public class PlayerMovement : MonoBehaviour
         ServiceLocator.GetService<InputManager>().OnMoveInputCallback -= OnMoveInputCallback;
     }
 
+    public void ResetMovement()
+    {
+        m_moveDirection = Vector2.zero;
+    }
+
     private void OnMoveInputCallback(Vector2 input)
     {
         m_moveDirection = input;

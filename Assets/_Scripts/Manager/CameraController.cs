@@ -8,6 +8,10 @@ namespace SGGames.Scripts.Managers
         [SerializeField] private Transform m_followingTarget;
         [SerializeField] private bool m_canFollow;
         
+        [Header("Movement Settings")]
+        [SerializeField] private float m_followSpeed = 5f; // Speed of camera follow
+
+        
         [Header("Camera Bounds")]
         [SerializeField] private bool m_useBounds = true;
         [SerializeField] private Vector2 m_boundsMin = new Vector2(-10f, -10f);
@@ -24,12 +28,15 @@ namespace SGGames.Scripts.Managers
         // Camera dimensions in world units for pixel perfect camera
         private float m_cameraHalfWidth;
         private float m_cameraHalfHeight;
+        
+        public static bool IsActivated;
 
         private void Awake()
         {
             m_cameraDistance = transform.position.z;
             m_camera = GetComponent<Camera>();
             CalculateCameraBounds();
+            IsActivated = true;
         }
 
         private void CalculateCameraBounds()
@@ -42,6 +49,7 @@ namespace SGGames.Scripts.Managers
 
         private void Update()
         {
+            if (!IsActivated) return;
             if (!m_canFollow) return;
             if (m_followingTarget == null) return;
             
@@ -63,7 +71,8 @@ namespace SGGames.Scripts.Managers
                 m_currentTargetPos.y = constrainedY;
             }
             
-            transform.position = m_currentTargetPos;
+            // Smooth camera movement using lerp
+            transform.position = Vector3.Lerp(transform.position, m_currentTargetPos, m_followSpeed * Time.deltaTime);
         }
 
         private void OnDrawGizmosSelected()

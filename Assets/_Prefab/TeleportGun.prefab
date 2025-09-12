@@ -137,6 +137,11 @@ MonoBehaviour:
   m_cooldown: 0.2
   m_projectileSpawnPoint: {fileID: 997683662097597402}
   m_projectilePool: {fileID: 7785245011051693842}
+  m_playerCollider: {fileID: 0}
+  m_drawDebug: 0
+  m_teleportRange: 4
+  m_chanceToTeleport: 60
+  m_cooldownTeleport: 3
 --- !u!114 &7785245011051693842
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 553883769804914391}
-  - component: {fileID: 3941096541896554965}
   - component: {fileID: 8378752756459725476}
+  - component: {fileID: 3941096541896554965}
+  - component: {fileID: 2665394437983825158}
   m_Layer: 9
   m_Name: Teleport Gun Projectile
   m_TagString: Untagged
@@ -34,20 +35,6 @@ Transform:
   - {fileID: 2976466833883152671}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3941096541896554965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3361746029938022415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e001c8e379c2d428303c0d1b37961f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 10
-  m_range: 7
 --- !u!61 &8378752756459725476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94,6 +81,39 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.12700549, y: 0.1940655}
   m_EdgeRadius: 0
+--- !u!114 &3941096541896554965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3361746029938022415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e001c8e379c2d428303c0d1b37961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speed: 10
+  m_range: 7
+  m_damageHandler: {fileID: 2665394437983825158}
+--- !u!114 &2665394437983825158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3361746029938022415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9449a5b8312f5eb44b479e03a4169a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_minDamage: 15
+  m_maxDamage: 20
+  m_invulnerabilityTime: 0.3
+  m_targetMask:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &8584880744369626541
 GameObject:
   m_ObjectHideFlags: 0

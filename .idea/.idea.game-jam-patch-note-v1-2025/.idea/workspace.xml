@@ -7,8 +7,6 @@
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Area/AreaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Area/AreaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/CardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/CardManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <workItem from="1757555607810" duration="11517000" />
       <workItem from="1757595494829" duration="2228000" />
       <workItem from="1757606819958" duration="12215000" />
-      <workItem from="1757641755165" duration="11016000" />
+      <workItem from="1757641755165" duration="11860000" />
     </task>
     <servers />
   </component>

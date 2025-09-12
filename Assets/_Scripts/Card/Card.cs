@@ -9,6 +9,8 @@ public class Card : MonoBehaviour
    
    public float currentDeathSpeed => m_currentDeathSpeed;
    public float currentDeathCount => m_currentDeathCount;
+   
+   public CardData CardData => m_cardData;
 
    public void Initialize(CardData data)
    {

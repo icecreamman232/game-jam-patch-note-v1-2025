@@ -273,6 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1650023b39d4ad4468f7cead720f4f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_category: 1
   m_deathCounter: {fileID: 185831530}
   m_pivot:
   - Pivot: {fileID: 860509504}
@@ -590,6 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1650023b39d4ad4468f7cead720f4f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_category: 0
   m_deathCounter: {fileID: 383067702}
   m_pivot:
   - Pivot: {fileID: 604170718}

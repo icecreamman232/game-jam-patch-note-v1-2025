@@ -11,11 +11,13 @@ public class AreaPivot
 
 public class AreaController : MonoBehaviour
 {
+    [SerializeField] private CardCategory m_category;
     [SerializeField] private AreaDeathCounter m_deathCounter;
     [SerializeField] private AreaPivot[] m_pivot;
 
     public bool AssignCard(Card card)
     {
+        if(card.CardData.Category != m_category) {return false;}
         var emptyPivot = m_pivot.FirstOrDefault(pivot => pivot.OccupiedCard == null);
         if (emptyPivot != null)
         {

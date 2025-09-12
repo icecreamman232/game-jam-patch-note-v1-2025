@@ -14,7 +14,6 @@ namespace SGGames.Scripts.Managers
 
         public Action<Vector2> OnMoveInputCallback;
         public Action<Vector2> WorldMousePosition;
-        public Action OnClickBuildPanelButton;
 
         public static bool IsActivated;
 
@@ -53,23 +52,14 @@ namespace SGGames.Scripts.Managers
             m_camera = Camera.main;
             ServiceLocator.RegisterService<InputManager>(this);
             m_moveAction = InputSystem.actions.FindAction("Move");
-            m_buildingPanelAction = InputSystem.actions.FindAction("Build Panel");
-            m_buildingPanelAction.performed += OnClickBuildPanel;
             IsActivated = true;
         }
 
         public void Uninstall()
         {
             IsActivated = false;
-            m_buildingPanelAction.performed -= OnClickBuildPanel;
             ServiceLocator.UnregisterService<InputManager>();
         }
-        
-        private void OnClickBuildPanel(InputAction.CallbackContext callbackContext)
-        {
-            OnClickBuildPanelButton?.Invoke();
-        }
-        
         
         private Vector3 ComputeWorldMousePosition()
         {

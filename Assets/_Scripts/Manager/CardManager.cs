@@ -34,6 +34,7 @@ public class CardManager : MonoBehaviour, IBootStrap, IGameService
             var cardData = GetRandomCard();
             var card = Instantiate(m_cardPrefab, m_cardPivot[i].position, Quaternion.identity);
             card.Initialize(cardData);
+            card.gameObject.SetActive(false);
             m_currentCards.Add(card);
         }
     }

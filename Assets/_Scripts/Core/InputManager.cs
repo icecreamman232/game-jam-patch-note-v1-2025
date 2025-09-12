@@ -10,10 +10,10 @@ namespace SGGames.Scripts.Managers
         private static Camera m_camera;
         private InputAction m_moveAction;
         private InputAction m_attackAction;
-        private InputAction m_buildingPanelAction;
 
         public Action<Vector2> OnMoveInputCallback;
         public Action<Vector2> WorldMousePosition;
+        public Action OnAttackInputCallback;
 
         public static bool IsActivated;
 
@@ -52,13 +52,21 @@ namespace SGGames.Scripts.Managers
             m_camera = Camera.main;
             ServiceLocator.RegisterService<InputManager>(this);
             m_moveAction = InputSystem.actions.FindAction("Move");
+            m_attackAction = InputSystem.actions.FindAction("Shoot");
+            m_attackAction.performed += AttackActionOnPerformed;
             IsActivated = true;
         }
 
         public void Uninstall()
         {
             IsActivated = false;
+            m_attackAction.performed -= AttackActionOnPerformed;
             ServiceLocator.UnregisterService<InputManager>();
+        }
+        
+        private void AttackActionOnPerformed(InputAction.CallbackContext callbackContext)
+        {
+            OnAttackInputCallback?.Invoke();
         }
         
         private Vector3 ComputeWorldMousePosition()

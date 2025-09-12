@@ -25,8 +25,8 @@ public class AreaDeathCounter : MonoBehaviour
     
     public void ApplyCard(Card card)
     {
-        m_totalSpeed += card.GenerateDeathSpeed;
-        m_totalCount += card.DeathCount;
+        m_totalSpeed += card.currentDeathSpeed;
+        m_totalCount += card.currentDeathCount;
         m_fillSpeed = m_totalSpeed * k_speedExchange;
     }
 

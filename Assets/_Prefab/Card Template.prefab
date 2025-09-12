@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 3987372130177982555}
   - component: {fileID: 7495996766836993109}
   - component: {fileID: 1089431254366820531}
+  - component: {fileID: 5941790559407659664}
   m_Layer: 0
   m_Name: Card Template
   m_TagString: Untagged
@@ -540,8 +541,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa41d533d7f32e24cae3a4c77b582d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_generateDeathSpeed: 0
-  m_deathCount: 0
+  m_cardData: {fileID: 0}
+  m_cardVisual: {fileID: 5941790559407659664}
+  m_currentDeathSpeed: 0
+  m_currentDeathCount: 0
+--- !u!114 &5941790559407659664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036189465960081908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230e3be7fdd7b3048946532560e63c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cardName: {fileID: 9013772173478474304}
+  m_icon: {fileID: 8571875221606060433}
+  m_cardValue: {fileID: 3874653242621076421}
 --- !u!1 &6355947446605110008
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +572,7 @@ GameObject:
   - component: {fileID: 4302608593246734124}
   - component: {fileID: 8834283318989201911}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Card Value BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -743,7 +761,7 @@ GameObject:
   - component: {fileID: 531476964883361726}
   - component: {fileID: 3874653242621076421}
   m_Layer: 0
-  m_Name: Card Name
+  m_Name: Card Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

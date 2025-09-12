@@ -2,9 +2,20 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-   [SerializeField] private float m_generateDeathSpeed;
-   [SerializeField] private float m_deathCount;
+   [SerializeField] private CardData m_cardData;
+   [SerializeField] private CardVisual m_cardVisual;
+   [SerializeField] private float m_currentDeathSpeed;
+   [SerializeField] private float m_currentDeathCount;
    
-   public float GenerateDeathSpeed => m_generateDeathSpeed;
-   public float DeathCount => m_deathCount;
+   public float currentDeathSpeed => m_currentDeathSpeed;
+   public float currentDeathCount => m_currentDeathCount;
+
+   public void Initialize(CardData data)
+   {
+      m_cardData = data;
+      m_currentDeathSpeed = data.GenerateDeathSpeed;
+      m_currentDeathCount = data.DeathCount;
+      
+      m_cardVisual.Initialize(data);
+   }
 }

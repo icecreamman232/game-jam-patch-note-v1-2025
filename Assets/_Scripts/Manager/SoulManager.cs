@@ -24,6 +24,22 @@ public class SoulManager : MonoBehaviour, IGameService, IBootStrap
         m_totalSoulHarvested = 0;
         UpdateSoulBar();
     }
+    
+    public void Uninstall()
+    {
+        ServiceLocator.UnregisterService<SoulManager>();
+    }
+
+    public bool IsSoulEnough(float amount)
+    {
+        return m_totalSoulHarvested >= amount;
+    }
+    
+    public void SpentSoul(float amount)
+    {
+        m_totalSoulHarvested -= amount;
+        UpdateSoulBar();
+    }
 
     private void OnDeathCountChanged(float count)
     {
@@ -37,8 +53,5 @@ public class SoulManager : MonoBehaviour, IGameService, IBootStrap
         m_soulCountText.text = $"{m_totalSoulHarvested}/{m_targetSoulCount}";
     }
 
-    public void Uninstall()
-    {
-        ServiceLocator.UnregisterService<SoulManager>();
-    }
+    
 }

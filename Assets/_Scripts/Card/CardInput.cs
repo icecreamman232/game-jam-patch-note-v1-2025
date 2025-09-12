@@ -7,6 +7,7 @@ public class CardInput : MonoBehaviour
     [SerializeField] private BoxCollider2D m_collider;
     
     private Vector3 m_startPos;
+    private bool m_isLockDrag;
 
     private void Awake()
     {
@@ -15,20 +16,28 @@ public class CardInput : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (m_isLockDrag) return;
         transform.position = InputManager.GetWorldMousePosition();
     }
 
     private void OnMouseUp()
     {
-        if (IsInDropArea(out var area))
+        if (!m_isLockDrag)
         {
-            var areaController = area.GetComponent<AreaController>();
-            var card = GetComponent<Card>();
-            if (!areaController.AssignCard(card))
+            if (IsInDropArea(out var area))
             {
-                transform.position = m_startPos;
-            }
-        } 
+                var areaController = area.GetComponent<AreaController>();
+                var card = GetComponent<Card>();
+                if (!areaController.AssignCard(card))
+                {
+                    transform.position = m_startPos;
+                }
+                else
+                {
+                    m_isLockDrag = true;
+                }
+            } 
+        }
     }
     
     private bool IsInDropArea(out Collider2D area)

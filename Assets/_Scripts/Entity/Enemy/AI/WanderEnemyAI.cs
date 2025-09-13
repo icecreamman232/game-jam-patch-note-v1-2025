@@ -30,6 +30,5 @@ public class WanderEnemyAI : MonoBehaviour
     private void OnHitCollide(GameObject obj)
     {
         m_movement.SetMoveDirection(GetRandomDirection().normalized);
-        
     }
 }

@@ -136,6 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ammoEvent: {fileID: 11400000, guid: 4cc7a9c778a293941be2cd5f3bdeec14, type: 2}
   m_reloadingEvent: {fileID: 11400000, guid: a7c93a94f05a94d449ab24155d83ab07, type: 2}
+  m_accuracyData: {fileID: 11400000, guid: 97aaa56987ec9e047b9a20bd709c07fe, type: 2}
+  m_accuracyLevel: 1
   m_delayBetweenTwoShot: 0.2
   m_projectileSpawnPoint: {fileID: 997683662097597402}
   m_projectilePool: {fileID: 7785245011051693842}
@@ -145,7 +147,7 @@ MonoBehaviour:
   m_playerCollider: {fileID: 0}
   m_drawDebug: 0
   m_teleportRange: 3
-  m_chanceToTeleport: 60
+  m_chanceToTeleport: 40
   m_cooldownTeleport: 3
 --- !u!114 &7785245011051693842
 MonoBehaviour:

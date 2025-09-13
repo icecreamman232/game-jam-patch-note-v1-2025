@@ -4091,10 +4091,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeleportGun
       objectReference: {fileID: 0}
-    - target: {fileID: 7681439201267141835, guid: a0d57177b4b41ee4480e936c0e1f51a1, type: 3}
-      propertyPath: m_drawDebug
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

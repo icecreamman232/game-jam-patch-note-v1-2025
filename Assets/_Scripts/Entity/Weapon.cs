@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected AmmoEvent m_ammoEvent;
     [SerializeField] protected ReloadingEvent m_reloadingEvent;
     [Header("Weapon")]
+    [SerializeField] private AccuracyData m_accuracyData;
+    [SerializeField] protected int m_accuracyLevel;
     [SerializeField] protected float m_delayBetweenTwoShot;
     [SerializeField] protected Transform m_projectileSpawnPoint;
     [SerializeField] protected ObjectPooler m_projectilePool;
@@ -50,13 +52,22 @@ public class Weapon : MonoBehaviour
         
         return true;
     }
+
+    protected Vector2 GetFinalShootingDirection(Vector2 inputDirection)
+    {
+        var differentAngle = m_accuracyData.GetAccuracy(m_accuracyLevel);
+        var randomAngle = Random.Range(-differentAngle, differentAngle);
+        var finalDirection = Quaternion.Euler(0, 0, randomAngle) * inputDirection;
+        return finalDirection;
+    }
     
     public virtual void Shoot(Vector2 direction)
     {
         if (!CanShoot()) return;
         
         var newProjectileGO = m_projectilePool.GetPooledGameObject();
-        newProjectileGO.transform.up = direction;
+        var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        newProjectileGO.transform.up = GetFinalShootingDirection(direction);
         newProjectileGO.transform.position = m_projectileSpawnPoint.position;
         var projectile = newProjectileGO.GetComponent<Projectile>();
         projectile.Spawn();

@@ -10,4 +10,5 @@ public class GameEvent : ScriptableEvent<GameEventType>
 public enum GameEventType
 {
     GameStart,
+    NextLevel
 }

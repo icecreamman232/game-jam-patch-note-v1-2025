@@ -16,10 +16,11 @@ public class JuggernautEnemyAI : EnemyAI
         m_gameEvent.AddListener(OnGameEventChanged);
     }
 
-    private void Start()
+    protected override void Start()
     {
         m_player = ServiceLocator.GetService<LevelManager>().CurrentPlayer.transform;
         m_movement.OnHitCollide += OnHitCollide;
+        base.Start();
     }
 
     private void OnDestroy()

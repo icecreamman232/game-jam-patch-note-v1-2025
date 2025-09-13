@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +24,7 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
     private int m_levelIndex;
     private List<GameObject> m_easyList;
     private List<GameObject> m_mediumList;
+    private HashSet<GameObject> m_enemyGroup;
     
     public GameObject CurrentPlayer => m_player;
     public void Install()
@@ -32,6 +32,7 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
         ServiceLocator.RegisterService<LevelManager>(this);
         m_easyList = new List<GameObject>();
         m_mediumList = new List<GameObject>();
+        m_enemyGroup = new HashSet<GameObject>();
         StartCoroutine(LoadFirstLevel());
     }
 
@@ -40,11 +41,30 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
         ServiceLocator.UnregisterService<LevelManager>();
     }
 
+    public void RegisterEnemy(GameObject newEnemy)
+    {
+        m_enemyGroup.Add(newEnemy);
+    }
+    
+    public void NotifyEnemyDeath(GameObject deathEnemy)
+    {
+        if (m_enemyGroup.Remove(deathEnemy))
+        {
+            if (m_enemyGroup.Count == 0)
+            {
+                m_enemyGroup.Clear();
+                m_gameEvent.Raise(GameEventType.NextLevel);
+                Debug.Log("NEXT LEVEL");
+            }
+        }
+    }
+
     private IEnumerator LoadFirstLevel()
     {
         //Spawn player
         
         //Get random level
+       
         GetRandomLevels();
         m_currentDifficulty = Difficulty.Easy;
         var level = GetLevel(m_currentDifficulty, m_levelIndex);

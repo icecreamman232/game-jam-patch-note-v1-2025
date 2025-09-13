@@ -1,4 +1,5 @@
 using System.Collections;
+using SGGames.Scripts.Core;
 using UnityEngine;
 
 public class EnemyHealth : Health
@@ -16,6 +17,7 @@ public class EnemyHealth : Health
         m_spriteRenderer.enabled = false;
         m_deathParticle.Play();
         yield return new WaitUntil(() => !m_deathParticle.IsAlive());
+        ServiceLocator.GetService<LevelManager>().NotifyEnemyDeath(this.gameObject);
         this.gameObject.SetActive(false);
     }
 }

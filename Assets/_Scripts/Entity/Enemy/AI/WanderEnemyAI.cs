@@ -1,7 +1,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class WanderEnemyAI : MonoBehaviour
+public class WanderEnemyAI : EnemyAI
 {
     [SerializeField] private GameEvent m_gameEvent;
     [SerializeField] private EnemyMovement m_movement;
@@ -17,10 +17,11 @@ public class WanderEnemyAI : MonoBehaviour
         m_gameEvent.RemoveListener(OnGameEventChanged);
     }
     
-    private void Start()
+    protected override void Start()
     {
         m_movement.OnHitCollide = OnHitCollide;
         m_movement.SetMoveDirection(GetRandomDirection().normalized);
+        base.Start();
     }
 
     private Vector2 GetRandomDirection()

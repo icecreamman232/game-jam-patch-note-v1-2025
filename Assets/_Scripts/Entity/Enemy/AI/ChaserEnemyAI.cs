@@ -20,11 +20,12 @@ public class ChaserEnemyAI : EnemyAI
         m_gameEvent.RemoveListener(OnGameEventChanged);
     }
 
-    private void Start()
+    protected override void Start()
     {
         m_player = ServiceLocator.GetService<LevelManager>().CurrentPlayer.transform;
         var direction = (m_player.position - transform.position).normalized;
         m_movement.SetMoveDirection(direction);
+        base.Start();
     }
     
     private void Update()

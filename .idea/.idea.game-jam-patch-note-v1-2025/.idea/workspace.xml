@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Chaser Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Chaser Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Juggernaut Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Juggernaut Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Wander Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Wander Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/ChaserEnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/ChaserEnemyAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/JuggernautEnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/JuggernautEnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/WanderEnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/WanderEnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Events/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Events/GameEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manager/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manager/LevelManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +153,7 @@
       <workItem from="1757693538884" duration="12474000" />
       <workItem from="1757746743012" duration="10156000" />
       <workItem from="1757758484276" duration="4474000" />
-      <workItem from="1757779295437" duration="714000" />
+      <workItem from="1757779295437" duration="1341000" />
     </task>
     <servers />
   </component>

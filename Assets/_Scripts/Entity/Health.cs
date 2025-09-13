@@ -55,12 +55,19 @@ public class Health : MonoBehaviour
     protected virtual IEnumerator OnInvulnerable(float duration)
     {
         m_isInvulnerable = true;
+        var timeStop = Time.time + duration;
         
-        m_spriteRenderer.GetPropertyBlock(m_materialPropertyBlock);
-        m_materialPropertyBlock.SetFloat("_BlendAmount", 1);
-        m_spriteRenderer.SetPropertyBlock(m_materialPropertyBlock);
-        
-        yield return new WaitForSeconds(duration);
+        while (Time.time < timeStop)
+        {
+            m_spriteRenderer.GetPropertyBlock(m_materialPropertyBlock);
+            m_materialPropertyBlock.SetFloat("_BlendAmount", 1);
+            m_spriteRenderer.SetPropertyBlock(m_materialPropertyBlock);
+            yield return new WaitForSeconds(0.08f);
+            m_spriteRenderer.GetPropertyBlock(m_materialPropertyBlock);
+            m_materialPropertyBlock.SetFloat("_BlendAmount", 0);
+            m_spriteRenderer.SetPropertyBlock(m_materialPropertyBlock);
+            yield return new WaitForSeconds(0.08f);
+        }
         
         m_spriteRenderer.GetPropertyBlock(m_materialPropertyBlock);
         m_materialPropertyBlock.SetFloat("_BlendAmount", 0);

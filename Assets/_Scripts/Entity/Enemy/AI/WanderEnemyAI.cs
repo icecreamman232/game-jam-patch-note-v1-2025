@@ -16,19 +16,14 @@ public class WanderEnemyAI : MonoBehaviour
     private Vector2 GetRandomDirection()
     {
         // Get current up direction as Vector2
-        Vector2 upDirection = transform.up;
+        Vector2 inverseDirection = transform.up * -1;
         
         // Generate random angle within the specified range
         float randomAngle = Random.Range(-m_maxAngleFromUp, m_maxAngleFromUp);
+       
+        var finalDirection = Quaternion.Euler(0, 0, randomAngle) * inverseDirection;
         
-        // Get the angle of the up direction
-        float upAngle = Mathf.Atan2(upDirection.y, upDirection.x) * Mathf.Rad2Deg;
-        
-        // Add the random offset to the up angle
-        float finalAngle = (upAngle + randomAngle) * Mathf.Deg2Rad;
-        
-        // Convert back to Vector2
-        return new Vector2(Mathf.Cos(finalAngle), Mathf.Sin(finalAngle));
+        return finalDirection;
     }
 
     

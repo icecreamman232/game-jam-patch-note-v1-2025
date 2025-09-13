@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_movement: {fileID: 6144998960005130350}
-  m_maxAngleFromUp: 180
+  m_maxAngleFromUp: 60
 --- !u!114 &6144998960005130350
 MonoBehaviour:
   m_ObjectHideFlags: 0

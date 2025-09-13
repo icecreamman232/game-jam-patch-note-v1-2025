@@ -5,12 +5,15 @@ using Random = UnityEngine.Random;
 
 public class TeleportGun : Weapon
 {
+    [SerializeField] private AnnouncerEvent m_announcerEvent;
     [SerializeField] private BoxCollider2D m_playerCollider;
     [SerializeField] private bool m_drawDebug;
     [SerializeField] private float m_teleportRange;
     [SerializeField] private float m_chanceToTeleport;
     [SerializeField] private float m_cooldownTeleport;
 
+    private readonly Color m_messagColor = new Color(0.9019608f,0.2784314f,0.1764706f);
+    private AnnouncerEventData m_announcerEventData;
     private PlayerMovement m_playerMovement;
     private bool m_isCooldownTeleport;
     private bool m_isTeleporting;
@@ -27,6 +30,7 @@ public class TeleportGun : Weapon
             m_playerMovement = GetComponentInParent<PlayerMovement>();
         }
         
+        m_announcerEventData = new AnnouncerEventData();
         base.Start();
     }
 
@@ -65,6 +69,8 @@ public class TeleportGun : Weapon
         
         if (!CanTeleport()) return;
 
+
+        
         StartCoroutine(OnTeleporting());
 
     }
@@ -75,6 +81,14 @@ public class TeleportGun : Weapon
         InputManager.SetActive(false);
         m_playerMovement.ResetMovement();
         CameraController.IsActivated = false;
+        
+        m_announcerEventData.Color = m_messagColor;
+        m_announcerEventData.Message = "Error!";
+        m_announcerEventData.Duration = 0.3f;
+        m_announcerEvent.Raise(m_announcerEventData);
+        yield return new WaitForSeconds(0.3f);
+        
+        
         yield return StartCoroutine(PlayTeleportDisappearTween());
         m_playerCollider.transform.position = GetRandomTeleportPosition();
         m_isCooldownTeleport = true;

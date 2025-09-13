@@ -144,6 +144,7 @@ MonoBehaviour:
   m_magazineSize: 10
   m_currentAmmo: 0
   m_reloadingTime: 0.7
+  m_announcerEvent: {fileID: 11400000, guid: 57870051c2f0ca84dbb933cfa8e292d1, type: 2}
   m_playerCollider: {fileID: 0}
   m_drawDebug: 0
   m_teleportRange: 3

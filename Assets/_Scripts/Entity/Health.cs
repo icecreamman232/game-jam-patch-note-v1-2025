@@ -5,8 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer m_spriteRenderer;
-    [SerializeField] protected float m_currentHealth;
     [SerializeField] protected float m_maxHealth;
+    [SerializeField] protected float m_currentHealth;
 
     private MaterialPropertyBlock m_materialPropertyBlock;
     protected bool m_isInvulnerable;

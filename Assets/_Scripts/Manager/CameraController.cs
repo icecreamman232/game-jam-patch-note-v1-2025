@@ -46,7 +46,7 @@ namespace SGGames.Scripts.Managers
             m_cameraHalfHeight = (540f / 64f) / 2f;
             m_cameraHalfWidth = (960f / 64f) / 2f;
         }
-
+        
         private void Update()
         {
             if (!IsActivated) return;

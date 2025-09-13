@@ -74,14 +74,29 @@ public class TeleportGun : Weapon
         InputManager.SetActive(false);
         m_playerMovement.ResetMovement();
         CameraController.IsActivated = false;
+        yield return StartCoroutine(PlayTeleportDisappearTween());
         m_playerCollider.transform.position = GetRandomTeleportPosition();
         m_isCooldownTeleport = true;
-        yield return new WaitForSeconds(0.3f);
         CameraController.IsActivated = true;
         yield return new WaitForSeconds(0.3f);
+        yield return StartCoroutine(PlayTeleportAppearTween());
         InputManager.SetActive(true);
         StartCoroutine(OnCooldownTeleport());
         m_isTeleporting = false;
+    }
+
+    private IEnumerator PlayTeleportDisappearTween()
+    {
+        m_playerCollider.transform.LeanScale(Vector3.zero, 0.3f)
+            .setEase(LeanTweenType.easeOutExpo);
+        yield return new WaitForSeconds(0.5f);
+    }
+    
+    private IEnumerator PlayTeleportAppearTween()
+    {
+        m_playerCollider.transform.LeanScale(Vector3.one, 0.3f)
+            .setEase(LeanTweenType.easeInOutCirc);
+        yield return new WaitForSeconds(0.5f);
     }
     
     private IEnumerator OnCooldownTeleport()

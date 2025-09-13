@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: eae4d383d426ada4fa65f1285056003b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64b1a9d39a0c06408e89e324c18acd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_spriteRenderer: {fileID: 6002921026297613744}
   m_currentHealth: 60
   m_maxHealth: 60
 --- !u!114 &967271339919399248
@@ -240,3 +241,4 @@ MonoBehaviour:
   m_speed: 1
   m_collider: {fileID: 2270581861177941661}
   m_moveDirection: {x: 0, y: 0}
+  m_hitCollideDistance: 0.1

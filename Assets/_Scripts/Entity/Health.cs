@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer m_spriteRenderer;
     [SerializeField] protected float m_currentHealth;
     [SerializeField] protected float m_maxHealth;
 
+    private MaterialPropertyBlock m_materialPropertyBlock;
     protected bool m_isInvulnerable;
     protected bool m_isDead;
     
@@ -15,6 +17,7 @@ public class Health : MonoBehaviour
     
     private void Start()
     {
+        m_materialPropertyBlock = new MaterialPropertyBlock();
         Initialize();
     }
 
@@ -52,7 +55,17 @@ public class Health : MonoBehaviour
     protected virtual IEnumerator OnInvulnerable(float duration)
     {
         m_isInvulnerable = true;
+        
+        m_spriteRenderer.GetPropertyBlock(m_materialPropertyBlock);
+        m_materialPropertyBlock.SetFloat("_BlendAmount", 1);
+        m_spriteRenderer.SetPropertyBlock(m_materialPropertyBlock);
+        
         yield return new WaitForSeconds(duration);
+        
+        m_spriteRenderer.GetPropertyBlock(m_materialPropertyBlock);
+        m_materialPropertyBlock.SetFloat("_BlendAmount", 0);
+        m_spriteRenderer.SetPropertyBlock(m_materialPropertyBlock);
+
         m_isInvulnerable = false;
     }
     

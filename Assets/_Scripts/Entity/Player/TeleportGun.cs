@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using SGGames.Scripts.Managers;
 using UnityEngine;
@@ -16,7 +15,7 @@ public class TeleportGun : Weapon
     private bool m_isCooldownTeleport;
     private bool m_isTeleporting;
 
-    private void Start()
+    protected override void Start()
     {
         if (m_playerCollider == null)
         {
@@ -27,6 +26,8 @@ public class TeleportGun : Weapon
         {
             m_playerMovement = GetComponentInParent<PlayerMovement>();
         }
+        
+        base.Start();
     }
 
     private bool CanTeleport()

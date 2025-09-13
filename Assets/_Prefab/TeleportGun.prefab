@@ -134,9 +134,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6994142c818c2aa4b9761e4a38c5dbeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_cooldown: 0.2
+  m_ammoEvent: {fileID: 11400000, guid: 4cc7a9c778a293941be2cd5f3bdeec14, type: 2}
+  m_reloadingEvent: {fileID: 11400000, guid: a7c93a94f05a94d449ab24155d83ab07, type: 2}
+  m_delayBetweenTwoShot: 0.2
   m_projectileSpawnPoint: {fileID: 997683662097597402}
   m_projectilePool: {fileID: 7785245011051693842}
+  m_magazineSize: 10
+  m_currentAmmo: 0
+  m_reloadingTime: 0.7
   m_playerCollider: {fileID: 0}
   m_drawDebug: 0
   m_teleportRange: 3

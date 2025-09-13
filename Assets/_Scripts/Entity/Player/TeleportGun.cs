@@ -3,7 +3,7 @@ using SGGames.Scripts.Managers;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class TeleportGun : Weapon
+public class TeleportGun : PlayerWeapon
 {
     [SerializeField] private AnnouncerEvent m_announcerEvent;
     [SerializeField] private BoxCollider2D m_playerCollider;

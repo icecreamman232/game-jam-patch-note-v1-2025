@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8c182a0e-825d-4983-b429-ed2de610a43c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-jam-patch-note-v1-2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Button Template.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Button Template.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Chaser Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Chaser Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Juggernaut Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Juggernaut Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Wander Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Enemy/Wander Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefab/Player Weapon/TeleportGun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefab/Player Weapon/TeleportGun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerWeaponHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerWeaponHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/TeleportGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Player/TeleportGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entity/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entity/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/AI/JuggernautEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Enemy/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerAiming.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Player/PlayerWeaponHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Player/TeleportGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Entity/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
@@ -157,7 +157,7 @@
       <workItem from="1757693538884" duration="12474000" />
       <workItem from="1757746743012" duration="10156000" />
       <workItem from="1757758484276" duration="4474000" />
-      <workItem from="1757779295437" duration="4370000" />
+      <workItem from="1757779295437" duration="6659000" />
     </task>
     <servers />
   </component>

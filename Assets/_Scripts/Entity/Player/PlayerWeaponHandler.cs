@@ -1,4 +1,3 @@
-using System;
 using SGGames.Scripts.Core;
 using SGGames.Scripts.Managers;
 using UnityEngine;

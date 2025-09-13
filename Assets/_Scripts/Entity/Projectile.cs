@@ -31,7 +31,11 @@ public class Projectile : MonoBehaviour
         m_isAlive = true;
         m_travelledDistance = 0;
         m_startPos = transform.position;
-        m_hitParticle.gameObject.SetActive(true);
+        if (m_hitParticle != null)
+        {
+            m_hitParticle.gameObject.SetActive(true);
+        }
+        
         m_spriteRenderer.enabled = true;
     }
     

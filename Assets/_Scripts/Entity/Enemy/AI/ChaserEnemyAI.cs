@@ -13,6 +13,7 @@ public class ChaserEnemyAI : EnemyAI
         m_player = ServiceLocator.GetService<LevelManager>().CurrentPlayer.transform;
         var direction = (m_player.position - transform.position).normalized;
         m_movement.SetMoveDirection(direction);
+        m_movement.SetCanMove(true);
     }
     
     private void Update()

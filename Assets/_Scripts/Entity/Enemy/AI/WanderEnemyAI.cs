@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,6 +9,7 @@ public class WanderEnemyAI : MonoBehaviour
     {
         m_movement.OnHitCollide = OnHitCollide;
         m_movement.SetMoveDirection(GetRandomDirection().normalized);
+        m_movement.SetCanMove(true);
     }
 
     private Vector2 GetRandomDirection()

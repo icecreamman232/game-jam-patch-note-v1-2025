@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
     [SerializeField] private Transform m_levelSpawnPoint;
     [SerializeField] private GameEvent m_gameEvent;
 
+    private GameObject m_currentLevel;
     private const int k_MaxEasyLevel = 2;
     private const int k_MaxMediumLevel = 3;
     private int m_levelIndex;
@@ -54,6 +55,7 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
             {
                 m_enemyGroup.Clear();
                 m_gameEvent.Raise(GameEventType.NextLevel);
+                StartCoroutine(LoadNextLevel());
                 Debug.Log("NEXT LEVEL");
             }
         }
@@ -67,8 +69,23 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
        
         GetRandomLevels();
         m_currentDifficulty = Difficulty.Easy;
-        var level = GetLevel(m_currentDifficulty, m_levelIndex);
-        Instantiate(level, Vector3.zero, Quaternion.identity, m_levelSpawnPoint);
+        var level = GetLevel();
+        m_currentLevel = Instantiate(level, Vector3.zero, Quaternion.identity, m_levelSpawnPoint);
+        CheckDifficulty();
+        yield return new WaitForSeconds(1f);
+        m_gameEvent.Raise(GameEventType.GameStart);
+    }
+
+    private IEnumerator LoadNextLevel()
+    {
+        if (m_currentLevel != null)
+        {
+            Destroy(m_currentLevel);
+            yield return new WaitForEndOfFrame();
+        }
+        var level = GetLevel();
+        m_currentLevel = Instantiate(level, Vector3.zero, Quaternion.identity, m_levelSpawnPoint);
+        CheckDifficulty();
         yield return new WaitForSeconds(1f);
         m_gameEvent.Raise(GameEventType.GameStart);
     }
@@ -90,26 +107,40 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
         GetLevelsFromContainer(m_levelContainer.MediumLevels, m_mediumList, k_MaxMediumLevel);
     }
 
-    private GameObject GetLevel(Difficulty difficulty, int levelIndex)
+    private GameObject GetLevel()
     {
-        switch (difficulty)
+        switch (m_currentDifficulty)
         {
             case Difficulty.Easy:
-                levelIndex++;
-                if (levelIndex > k_MaxEasyLevel - 1)
-                {
-                    m_currentDifficulty = Difficulty.Medium;
-                }
-                return m_easyList[levelIndex - 1];
+                return m_easyList[m_levelIndex];
             case Difficulty.Medium:
-                levelIndex++;
-                if (levelIndex > k_MaxMediumLevel - 1)
-                {
-                    m_currentDifficulty = Difficulty.Medium;
-                }
-                return m_mediumList[levelIndex - 1];
+                return m_mediumList[m_levelIndex];
         }
         
         return null;
+    }
+    
+    private void CheckDifficulty()
+    {
+        switch (m_currentDifficulty)
+        {
+            case Difficulty.Easy:
+                m_levelIndex++;
+                if (m_levelIndex > k_MaxEasyLevel - 1)
+                {
+                    m_currentDifficulty = Difficulty.Medium;
+                }
+
+                break;
+            case Difficulty.Medium:
+                m_levelIndex++;
+                if (m_levelIndex > k_MaxMediumLevel - 1)
+                {
+                    m_currentDifficulty = Difficulty.Medium;
+                    m_levelIndex = k_MaxMediumLevel - 1;
+                }
+
+                break;
+        }
     }
 }

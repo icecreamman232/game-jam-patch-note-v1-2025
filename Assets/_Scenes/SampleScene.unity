@@ -2511,6 +2511,7 @@ MonoBehaviour:
   m_player: {fileID: 1660868659}
   m_levelContainer: {fileID: 11400000, guid: 3e25b1150de3f94499c0263146be9357, type: 2}
   m_levelSpawnPoint: {fileID: 1461746171}
+  m_gameEvent: {fileID: 11400000, guid: 05c740b387cf1704694a1524c42b4e76, type: 2}
 --- !u!4 &737892077
 Transform:
   m_ObjectHideFlags: 0

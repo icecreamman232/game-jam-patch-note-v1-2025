@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce12b792aace4c442aa919050f25e7d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveDirection: 0
+  m_gameEvent: {fileID: 11400000, guid: 05c740b387cf1704694a1524c42b4e76, type: 2}
   m_movement: {fileID: 4149831064528732802}
   m_restDuration: 1
 --- !u!1 &7627181735686567691

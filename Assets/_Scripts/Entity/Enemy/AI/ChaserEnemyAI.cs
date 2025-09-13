@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class ChaserEnemyAI : EnemyAI
 {
+    [SerializeField] private GameEvent m_gameEvent;
     [SerializeField] private EnemyMovement m_movement;
     [SerializeField] private float m_frequencyCheckPlayer;
     private Transform m_player;
     private float m_timeSinceLastCheck;
+
+    private void Awake()
+    {
+        m_gameEvent.AddListener(OnGameEventChanged);
+    }
+
+    private void OnDestroy()
+    {
+        m_gameEvent.RemoveListener(OnGameEventChanged);
+    }
+
     private void Start()
     {
         m_player = ServiceLocator.GetService<LevelManager>().CurrentPlayer.transform;
         var direction = (m_player.position - transform.position).normalized;
         m_movement.SetMoveDirection(direction);
-        m_movement.SetCanMove(true);
     }
     
     private void Update()
@@ -23,6 +34,14 @@ public class ChaserEnemyAI : EnemyAI
             m_timeSinceLastCheck = Time.time;
             var direction = (m_player.position - transform.position).normalized;
             m_movement.SetMoveDirection(direction);
+        }
+    }
+    
+    private void OnGameEventChanged(GameEventType gameEventType)
+    {
+        if (gameEventType == GameEventType.GameStart)
+        {
+            m_movement.SetCanMove(true);
         }
     }
 }

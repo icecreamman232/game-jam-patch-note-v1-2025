@@ -1,34 +1,30 @@
-using System;
 using SGGames.Scripts.Core;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class JuggernautEnemyAI : EnemyAI
 {
-    internal enum MoveDirection
-    {
-        Left,
-        Right,
-        Top,
-        Bottom
-    }
-    
-    [SerializeField] private MoveDirection m_moveDirection;
+    [SerializeField] private GameEvent m_gameEvent;
     [SerializeField] private EnemyMovement m_movement;
     [SerializeField] private float m_restDuration;
     private bool m_isResting;
     private float m_restTimer;
     private Transform m_player;
 
+
+    private void Awake()
+    {
+        m_gameEvent.AddListener(OnGameEventChanged);
+    }
+
     private void Start()
     {
         m_player = ServiceLocator.GetService<LevelManager>().CurrentPlayer.transform;
         m_movement.OnHitCollide += OnHitCollide;
-        m_isResting = true;
     }
 
     private void OnDestroy()
     {
+        m_gameEvent.RemoveListener(OnGameEventChanged);
         m_movement.OnHitCollide -= OnHitCollide;
     }
 
@@ -36,7 +32,6 @@ public class JuggernautEnemyAI : EnemyAI
     {
         if (hit.layer == LayerMask.NameToLayer("Obstacle"))
         {
-            Debug.Log($"Hit {hit.gameObject.name}");
             m_restTimer = 0;
             m_isResting = true;
             m_movement.SetCanMove(false);
@@ -60,5 +55,13 @@ public class JuggernautEnemyAI : EnemyAI
     {
         m_movement.SetMoveDirection((m_player.position - transform.position).normalized);
         m_movement.SetCanMove(true);
+    }
+    
+    private void OnGameEventChanged(GameEventType gameEventType)
+    {
+        if (gameEventType == GameEventType.GameStart)
+        {
+            m_isResting = true;
+        }
     }
 }

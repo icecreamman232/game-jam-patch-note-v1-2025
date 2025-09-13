@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350eac699f4e76341afa5407b43afc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_gameEvent: {fileID: 11400000, guid: 05c740b387cf1704694a1524c42b4e76, type: 2}
   m_movement: {fileID: 5440199282993036366}
   m_frequencyCheckPlayer: 1.5
 --- !u!114 &5440199282993036366

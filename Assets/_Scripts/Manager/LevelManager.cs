@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
     [SerializeField] private GameObject m_player;
     [SerializeField] private LevelContainer m_levelContainer;
     [SerializeField] private Transform m_levelSpawnPoint;
+    [SerializeField] private GameEvent m_gameEvent;
 
     private const int k_MaxEasyLevel = 2;
     private const int k_MaxMediumLevel = 3;
@@ -49,7 +50,7 @@ public class LevelManager : MonoBehaviour, IGameService, IBootStrap
         var level = GetLevel(m_currentDifficulty, m_levelIndex);
         Instantiate(level, Vector3.zero, Quaternion.identity, m_levelSpawnPoint);
         yield return new WaitForSeconds(1f);
-
+        m_gameEvent.Raise(GameEventType.GameStart);
     }
 
     private void GetLevelsFromContainer(GameObject[] inputList, List<GameObject> outputList, int levelCount)

@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b6ba9036cf70a4b87ea58a3e5eb487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_gameEvent: {fileID: 11400000, guid: 05c740b387cf1704694a1524c42b4e76, type: 2}
   m_movement: {fileID: 6144998960005130350}
   m_maxAngleFromUp: 60
 --- !u!114 &6144998960005130350

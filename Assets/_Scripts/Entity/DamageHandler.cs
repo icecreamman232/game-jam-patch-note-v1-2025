@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 
 public class DamageHandler : MonoBehaviour
 {
+    [SerializeField] private float m_knockBackForce = 10;
     [SerializeField] private float m_minDamage;
     [SerializeField] private float m_maxDamage;
     [SerializeField] private float m_invulnerabilityTime;
@@ -27,11 +28,18 @@ public class DamageHandler : MonoBehaviour
     protected virtual void OnDealDamage(Collider2D other)
     {
         var health = other.GetComponent<Health>();
+        var movement = other.GetComponent<EnemyMovement>();
         OnDamageTaken?.Invoke(other.gameObject);
-        if (health == null)
+
+        if (movement != null)
         {
-            return;
+            var direction = other.transform.position - transform.position;
+            movement.ApplyKnockback(direction.normalized, m_knockBackForce);
         }
-        health.TakeDamage(GetDamage(), gameObject, m_invulnerabilityTime);
+        
+        if (health != null)
+        {
+            health.TakeDamage(GetDamage(), gameObject, m_invulnerabilityTime);
+        }
     }
 }
